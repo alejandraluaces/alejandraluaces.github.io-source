@@ -1,0 +1,11 @@
+.button {
+
+}
+
+button {
+  @extend .button;
+}
+
+p {
+  font-family: "Lato";
+}

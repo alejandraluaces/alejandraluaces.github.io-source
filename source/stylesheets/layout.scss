@@ -1,0 +1,48 @@
+%group {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+%column {
+  float: left;
+  margin: 0 1% 1.5em 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.l--container {
+  @extend %group;
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    padding: 1em 0;
+  }
+}
+
+.l--half {
+  @extend %column;
+  width: 49.5%;
+}
+
+.l--quarter {
+  @extend %column;
+  width: 24.25%;
+}
+
+.l--oneThird {
+  @extend %column;
+  width: 33%;
+}
+
+.l--twoThird {
+  @extend %column;
+  width: 66%;
+}
