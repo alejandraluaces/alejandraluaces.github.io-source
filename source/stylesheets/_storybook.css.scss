@@ -1,0 +1,96 @@
+// ------------------------------------------------------------------------------
+// Table of Contents
+//
+// - Storybook
+// - Back Cover
+//
+// ------------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------------
+// Storybook
+// ------------------------------------------------------------------------------
+
+.storybook {
+  text-align: center;
+  margin-bottom: 10em;
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 5em;
+  }
+
+  &:first-child {
+    padding-top: 5em;
+
+    @media screen and (max-width: 400px) {
+      padding-top: 2em;
+    }
+  }
+
+  & p {
+    max-width: 700px;
+    margin: 1em auto;
+  }
+}
+
+.storybook__line {
+  font-size: 2em;
+  font-weight: 300;
+  color: $grey--light;
+  font-style: italic;
+  margin: 0 auto;
+
+  @media screen and (max-width: 400px) {
+    text-align: left;
+    font-size: 1.5em;
+  }
+}
+
+.storybook__image {
+  width: 80%;
+  max-width: 450px;
+  margin: 0 auto 2em;
+
+  img {
+    width: 100%;
+  }
+}
+
+.storybook__text {
+  font-family: $serif;
+  margin-bottom: 2em;
+  text-align: center;
+
+  @media screen and (max-width: 400px) {
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+// ------------------------------------------------------------------------------
+// Back Cover
+// ------------------------------------------------------------------------------
+
+.backCover__block {
+  padding: 0 1em;
+  font-size: 80%;
+  line-height: 1.5;
+}
+
+.backCover__heading {
+  font-family: $sansSerif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.backCover__text {
+  text-align: left;
+  margin: 0;
+}
+
+.index--heading {
+  font-family: $sansSerif;
+  letter-spacing: 5px;
+  font-size: 4.35em;
+  color: $white;
+  margin-bottom: 0;
+}

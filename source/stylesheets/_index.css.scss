@@ -1,0 +1,4 @@
+.bigBackground--chalk {
+  @extend %bigBackground;
+  background-image: url("/images/index--bg.jpg");
+}
