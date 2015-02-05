@@ -75,4 +75,10 @@ a {
   width: 20px;
   display: inline-block;
   margin-right: 1em;
+  fill: $white;
+
+  a:hover & {
+    fill: $pop;
+    transition: .2s all ease-in-out;
+  }
 }
