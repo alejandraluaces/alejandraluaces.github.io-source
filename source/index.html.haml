@@ -11,7 +11,11 @@
   %section.index.bigBackground--chalk.flexbox--center
     %h1.index--heading Alejandra Luaces
     %section.social
-      = link_to image_tag("/images/icons/git.svg", alt: "Github", class: "icon"), "http://github.com/alejandraluaces"
-      = link_to image_tag("/images/icons/rdio.svg", alt: "Rdio", class: "icon"), "http://www.rdio.com/people/aluaces/"
-      = link_to image_tag("/images/icons/twit.svg", alt: "Twitter", class: "icon"), "http://twitter.com/alejandraluaces"
-      = link_to image_tag("/images/icons/drib.svg", alt: "Dribbble", class: "icon"), "http://dribbble.com/alejandraluaces"
+      = link_to "http://github.com/alejandraluaces" do
+        = partial "/images/icons/git.svg"
+      = link_to "http://www.rdio.com/people/aluaces" do
+        = partial "/images/icons/rdio.svg"
+      = link_to "http://twitter.com/alejandraluaces" do
+        = partial "/images/icons/twit.svg"
+      = link_to "http://dribbble.com/alejandraluaces" do
+        = partial "/images/icons/drib.svg"
