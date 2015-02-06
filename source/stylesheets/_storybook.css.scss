@@ -12,14 +12,20 @@
 
 .storybook {
   text-align: center;
-  margin-bottom: 10em;
+  margin-bottom: 13em;
+  z-index: 1;
+
+  @media screen and (max-width: 700px) {
+    height: auto;
+    margin-bottom: 10em;
+  }
 
   @media screen and (max-width: 400px) {
-    margin-bottom: 5em;
+    padding: 0 1em;
   }
 
   &:first-child {
-    padding-top: 5em;
+    padding-top: 12%;
 
     @media screen and (max-width: 400px) {
       padding-top: 2em;
@@ -30,6 +36,10 @@
     max-width: 700px;
     margin: 1em auto;
   }
+}
+
+#dreamer {
+  background-image: linear-gradient($blue--light, white);
 }
 
 .storybook__line {
@@ -46,12 +56,15 @@
 }
 
 .storybook__image {
-  width: 80%;
-  max-width: 450px;
+  max-width: 600px;
   margin: 0 auto 2em;
 
   img {
     width: 100%;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 90%;
   }
 }
 
@@ -94,3 +107,82 @@
   color: $white;
   margin-bottom: 0;
 }
+
+.airplane {
+  width: 90%;
+  max-width: 800px;
+
+  img {
+    width: 100%;
+  }
+}
+
+// ------------------------------------------------------------------------------
+// Clouds
+// ------------------------------------------------------------------------------
+
+#clouds {
+  position: relative;
+  width: 100%;
+  user-select: none;
+
+  div {
+    position: absolute;
+    width: 800px;
+    height: 289px;
+    // if you use this data uri, you will have to change the width/height/timing etc. we can work on it together if you'd like
+    // background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAABgCAYAAACTzNnjAAAFCklEQVR42u3d34uVRRjA8YMsEi0iSwhdRBGhSJgZiNRFIkWhQVEXBipKUVBBLCF6k0h4UxFkBLq4QT/Qiyi80EgxCjXMWqOMtqy0bBNja92yXatN3c3pGc9sHU/v+X3emWfe93vx+QN23u+e95x5Z94pmNWFQo5NEytErzgoBsSIOCf+FqbEBTEhzophcVTsFxvFEjE152PZHGMukbcB6BAPij0uqgtl0bXCBvyjeFPcS2wEWc0y0ec++Ywnf7rwbyc8grQ6RY8Y9RhhJT+Jde4TmghzFuR08bo4ryDEpE/N58QUYsx+kFPcD4yzCkMsZz+1uwkyu0HeKYYiCLHcN2I2QWYnSPudbHubfy37NuFu4wQZeZD2k2Uw4hDLHRZdBBnnH3K/5ykcX86IeQQZl6civ0XXYv/RlhJkHLZkOMTypz7dBKnbyzmJsfTZeTdB6vRszmIsjXI5QeryWMa/M9ZinzjdTJA63CLGcxzjpD/ElQQZfq3iKDFe8lSHIAPqI8L/6SHIMB4nvorTQQsI0v+teoz4KjpBkH7tIrqaNhCkH9cnbK5C8q/uywiSHzKabCLIdM3K+QR4o8YysfVWcZDvElnD1hNkOi5XuilLu5MlOyzni3vESnGfWCRuIMjm1zgSWPM7GWvNXdonXkdM8Q0dCwmytu8Iy/vK9B3iRoJMnghnqifc8jb7yXkXQf5nLWGo2WR2HUGuLrxPDKq25D6d9yBPE4I6/e6rVO6CnMpkuFq/eLmFKwtyMRde/dOg2XkKkvlH/X5P9ZNSWZBvcMGjMJza6iJlQe7nYkfjozwE+TkXOiprsx7kES5yVOzLYK/IcpA/cJGj806Wg/yaCxzlzsersxpkPxc4SruzGuQBLm603yU7DPOQUOSJWIK0E6j2lcvPm+JJVp+674oDbiFuv5t/fEXs5cJG65DmIO3KY3vG3yCLbXO1N1xVkB3uWfQQFye3rtUS5DN1bC5C9j0cOki7XOwUFwJOb6gg7TmCW1lMizI7QwQ5nW2qqGCv7yDtwsxfGXhU0OczyKvECIOOKvb5CnKa2+TDoKOat3wFyaIH1ONFH0H2MNCo00NpBzmXR39owIy0gzzOIKNOv6X9LHsZg4wGp3xsM/ZMoUfF3aaZ4++qBDnIIKMNzrsHKb11Lb6oEORtDCRSYB81f+vWxzYUJBv2kTYb5vx6gzzHgMHTjsUXagV5BwMFzz78d5NYQpDbGCAEcOzissaEIL9kcBDIx0lBsrwMIW0uD3KcQUHgqaEFpUGyLQGhnSgNkgGBBg8QJDQ5Phkky82g5bvkNQXDscDQY6MNcpiBgBL9NsjDDAS0LPq1Qb7EQECJicLFSUkGAkpMLgMaYzCgKci3GQxomPqZDPImBgMa9uOULifnDWcI7VRpkIsYEAR2sHwX2GcMCgJak/QKPh4lIsgcpOhM2iv7JIODAPqqvY7vPQYInlf6zKsWpN2iOMBAwZMD9bzSudPwvh+kr3gofJ0vve/ikxIp36pXNHosiD2j5gMGD2ksyG3lJK917qc5A4l2eNW04Wi5OaZ41DADilZu0xtMmw/fXCV+ZnDRoFFTfBdpaudlLxVfsXMRNYy7W3SH8XSAu/01bo8s/kL8xQWAM+JC7DIeDnCvZqZ4RGxxi3/3iUPOJ+5TtRXfG/v6jeadNMVjlqsZquG0uwU164ybg2vFuPuh2ax23tkm3N91VLwmbjVNvPT+H7Ro4730ITNPAAAAAElFTkSuQmCC);
+
+    // if you use this image, we should prob make it local.  could also make it a data uri
+    background-image: url(http://www.scri8e.com/stars/PNG_Clouds/zc06.png);
+    z-index: 0;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    top: 155px;
+
+    -webkit-animation: cloud1 230s linear infinite;
+    -moz-animation:    cloud1 230s linear infinite;
+    -o-animation:      cloud1 230s linear infinite;
+    animation:         cloud1 230s linear infinite;
+  }
+
+  #cloud2 {
+    background-size: 50%;
+    top: 140px;
+    z-index: 1;
+
+    -ms-transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg);
+
+    -webkit-animation: cloud2 150s linear infinite;
+    -moz-animation:    cloud2 150s linear infinite;
+    -o-animation:      cloud2 150s linear infinite;
+    animation:         cloud2 150s linear infinite;
+  }
+
+  #cloud3 {
+    background-size: 70%;
+    top: 375px;
+
+    -webkit-animation: cloud3 200s linear infinite;
+    -moz-animation:    cloud3 200s linear infinite;
+    -o-animation:      cloud3 200s linear infinite;
+    animation:         cloud3 200s linear infinite;
+  }
+}
+
+@-webkit-keyframes cloud1 { 0% { left: -20%; } 100% { left: 110%; } }
+@-moz-keyframes    cloud1 { 0% { left: -20%; } 100% { left: 110%; } }
+@-o-keyframes      cloud1 { 0% { left: -20%; } 100% { left: 110%; } }
+@keyframes         cloud1 { 0% { left: -20%; } 100% { left: 110%; } }
+
+@-webkit-keyframes cloud2 { 0% { left: -20%; } 100% { left: 115%; } }
+@-moz-keyframes    cloud2 { 0% { left: -20%; } 100% { left: 115%; } }
+@-o-keyframes      cloud2 { 0% { left: -20%; } 100% { left: 115%; } }
+@keyframes         cloud2 { 0% { left: -20%; } 100% { left: 115%; } }
+
+@-webkit-keyframes cloud3 { 0% { left: -15%; } 100% { left: 110%; } }
+@-moz-keyframes    cloud3 { 0% { left: -15%; } 100% { left: 110%; } }
+@-o-keyframes      cloud3 { 0% { left: -15%; } 100% { left: 110%; } }
+@keyframes         cloud3 { 0% { left: -15%; } 100% { left: 110%; } }
