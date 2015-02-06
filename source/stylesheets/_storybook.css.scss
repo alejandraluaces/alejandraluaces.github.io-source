@@ -20,10 +20,6 @@
     margin-bottom: 10em;
   }
 
-  @media screen and (max-width: 400px) {
-    padding: 0 1em;
-  }
-
   &:first-child {
     padding-top: 10%;
 
@@ -93,9 +89,39 @@
   }
 }
 
+#fearless {
+  background-image: url("/images/alligator.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  padding-bottom: 5em;
+
+  @media screen and (max-width: 400px) {
+    background-size: 100%;
+    padding: 0;
+  }
+
+  & h2 {
+    color: darken(#8a987a, 20%);
+  }
+
+  & .l--container {
+    padding-top: 12em;
+
+    @media screen and (max-width: 400px) {
+      padding-top: 4em;
+    }
+  }
+}
+
 // ------------------------------------------------------------------------------
 // Back Cover
 // ------------------------------------------------------------------------------
+
+.backCover {
+  @extend .flexbox--center;
+  background-color: #ffcccc;
+  height: 100vh;
+}
 
 .backCover__block {
   padding: 0 1em;
@@ -107,19 +133,13 @@
   font-family: $sansSerif;
   text-transform: uppercase;
   margin: 0;
+  opacity: .8;
 }
 
 .backCover__text {
   text-align: left;
   margin: 0;
-}
-
-.index--heading {
-  font-family: $sansSerif;
-  letter-spacing: 5px;
-  font-size: 4.35em;
-  color: $white;
-  margin-bottom: 0;
+  opacity: .6;
 }
 
 .airplane {
