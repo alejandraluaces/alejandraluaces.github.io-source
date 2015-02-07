@@ -12,21 +12,9 @@
 
 .storybook {
   text-align: center;
-  margin-bottom: 13em;
   z-index: 1;
-
-  @media screen and (max-width: 700px) {
-    height: auto;
-    margin-bottom: 10em;
-  }
-
-  &:first-child {
-    padding-top: 10%;
-
-    @media screen and (max-width: 400px) {
-      padding-top: 2em;
-    }
-  }
+  height: 100vh;
+  padding: 10em 0;
 
   & p {
     max-width: 700px;
@@ -82,18 +70,20 @@
 #hungry {
   @extend %bigBackground;
   background-image: url("/images/hungry.jpg");
-  padding-top: 12%;
 
   & h2, p {
-    color: $white;
+    color: $black;
+  }
+
+  h2 {
+    margin-top: 3em;
   }
 }
 
 #fearless {
   background-image: url("/images/alligator.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
-  padding-bottom: 5em;
+  background-position: 100% 30%;
 
   @media screen and (max-width: 400px) {
     background-size: 100%;
@@ -105,12 +95,16 @@
   }
 
   & .l--container {
-    padding-top: 12em;
+    padding-top: 20em;
 
     @media screen and (max-width: 400px) {
       padding-top: 4em;
     }
   }
+}
+
+#team {
+  margin-bottom: 5em;
 }
 
 // ------------------------------------------------------------------------------
@@ -182,7 +176,7 @@
 .cloudOne {
   @include animation(cloud1 200s linear infinite);
   opacity: 0.4;
-  top: 30px;
+  top: 0;
 }
 
 .cloudTwo {
