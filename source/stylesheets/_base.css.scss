@@ -23,6 +23,7 @@ body {
   min-height: 100%;
   border-left: 10px solid #ffcccc;
   border-right: 10px solid #ffcccc;
+  padding-top: 3em;
 
   &:before,
   &:after {
@@ -44,6 +45,7 @@ body {
 
   @media screen and (max-width: 400px) {
     border: none;
+    padding: 0;
 
     &:before,
     &:after {
