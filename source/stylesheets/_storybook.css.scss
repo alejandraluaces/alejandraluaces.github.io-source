@@ -180,31 +180,19 @@
 }
 
 .cloudOne {
+  @include animation(cloud1 200s linear infinite);
   opacity: 0.4;
   top: 30px;
-
-  -webkit-animation: cloud1 200s linear infinite;
-  -moz-animation:    cloud1 200s linear infinite;
-  -o-animation:      cloud1 200s linear infinite;
-  animation:         cloud1 200s linear infinite;
 }
 
 .cloudTwo {
+  @include animation(cloud2 200s linear infinite);
   top: 100px;
   opacity: .5;
-
-  -webkit-animation: cloud2 200s linear infinite;
-  -moz-animation:    cloud2 200s linear infinite;
-  -o-animation:      cloud2 200s linear infinite;
-  animation:         cloud2 200s linear infinite;
 }
 
 .cloudThree {
+  @include animation(cloud3 200s linear infinite);
   top: 240px;
   z-index: 2;
-
-  -webkit-animation: cloud3 200s linear infinite;
-  -moz-animation:    cloud3 200s linear infinite;
-  -o-animation:      cloud3 200s linear infinite;
-  animation:         cloud3 200s linear infinite;
 }
