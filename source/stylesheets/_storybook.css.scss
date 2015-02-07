@@ -14,7 +14,12 @@
   text-align: center;
   z-index: 1;
   height: 100vh;
-  padding: 10em 0;
+  @extend .flexbox--center;
+
+  @media screen and (max-width: 400px) {
+    height: 1136px;
+    padding: 0;
+  }
 
   & p {
     max-width: 700px;
@@ -112,9 +117,13 @@
 // ------------------------------------------------------------------------------
 
 .backCover {
-  @extend .flexbox--center;
   background-color: #ffcccc;
   height: 100vh;
+  @extend .flexbox--center;
+
+  @media screen and (max-width: 400px) {
+    height: 1136px;
+  }
 }
 
 .backCover__block {

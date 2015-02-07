@@ -41,6 +41,15 @@ body {
   &:after {
       bottom: 0;
   }
+
+  @media screen and (max-width: 400px) {
+    border: none;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
 }
 
 a {
