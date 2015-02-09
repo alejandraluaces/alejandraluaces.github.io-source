@@ -20,34 +20,27 @@ body {
   font-style: normal;
   line-height: 1.5;
   box-sizing: border-box;
-  border-left: 10px solid #ffcccc;
-  border-right: 10px solid #ffcccc;
 
-  &:before,
-  &:after {
-      content: "";
-      position: fixed;
-      background: #ffcccc;
-      left: 0;
-      right: 0;
-      height: 10px;
-  }
-
-  &:before {
-      top: 0;
-  }
-
-  &:after {
-      bottom: 0;
-  }
-
-  @media screen and (max-width: 400px) {
-    border: none;
-    padding: 0;
+  @media screen and (min-width: 800px) {
+    border-left: 10px solid #ffcccc;
+    border-right: 10px solid #ffcccc;
 
     &:before,
     &:after {
-      display: none;
+        content: "";
+        position: fixed;
+        background: #ffcccc;
+        left: 0;
+        right: 0;
+        height: 10px;
+    }
+
+    &:before {
+        top: 0;
+    }
+
+    &:after {
+        bottom: 0;
     }
   }
 }
