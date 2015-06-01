@@ -1,0 +1,15 @@
+[
+  {
+    "title": "First Portfolio Item",
+    "image": "airplane.png",
+    "description": "This is an awesome portfolio item",
+    "more_info_markdown_file_name": "first_portfolio_item"
+  },
+
+  {
+    "title": "Second Portfolio Item",
+    "image": "alligator.png",
+    "description": "This is an awesome portfolio item",
+    "more_info_markdown_file_name": "second_portfolio_item"
+  }
+]

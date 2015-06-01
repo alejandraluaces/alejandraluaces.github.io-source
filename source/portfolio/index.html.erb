@@ -1,0 +1,13 @@
+<% data.portfolio_items.each do |portfolio_item| %>
+  <div class="portfolio-item-card">
+    <h1><%= portfolio_item["title"] %></h1>
+    <div>
+      <img src="/images/<%= portfolio_item["image"] %>">
+      </img>
+    </div>
+    <div>
+      <a href="/portfolio/<%= portfolio_item["more_info_markdown_file_name"] %>.html">
+        <%= portfolio_item["description"] %></div>
+      </a>
+  </div>
+<% end %>
