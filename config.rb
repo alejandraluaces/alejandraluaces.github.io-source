@@ -12,10 +12,6 @@ end
 
 page "/feed.xml", layout: false
 
-page "/blog", :layout => :blog_post_layout
-page "/blog/*", :layout => :blog_post_layout
-page "/portfolio", :layout => :portfolio_layout
-
 ###
 # Output
 ###
