@@ -1,6 +1,3 @@
-###
-# Blog
-###
 
 activate :blog do |blog|
 
@@ -12,18 +9,10 @@ end
 
 page "/feed.xml", layout: false
 
-###
-# Output
-###
-
 activate :autoprefixer
 activate :imageoptim
 activate :title, site: 'Alejandra Luaces', separator: ' | '
 activate :syntax
-
-###
-# Helpers
-###
 
 activate :livereload
 
@@ -32,10 +21,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
-
-###
-# Build
-###
 
 configure :build do
 
