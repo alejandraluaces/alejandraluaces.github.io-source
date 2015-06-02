@@ -1,3 +1,4 @@
+set :haml, :format => :html5
 
 activate :blog do |blog|
 
