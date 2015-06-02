@@ -8,5 +8,6 @@ gem "middleman-livereload", "~> 3.3.0"
 gem 'middleman-autoprefixer'
 gem 'middleman-imageoptim'
 gem 'middleman-title'
+gem "middleman-syntax"
 
 gem "pry"

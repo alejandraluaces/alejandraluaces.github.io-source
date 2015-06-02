@@ -39,6 +39,7 @@ page "/portfolio", :layout => :portfolio_layout
 activate :autoprefixer
 activate :imageoptim
 activate :title, site: 'Alejandra Luaces', separator: ' | '
+activate :syntax
 
 ###
 # Helpers
