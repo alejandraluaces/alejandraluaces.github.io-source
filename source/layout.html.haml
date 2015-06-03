@@ -1,7 +1,10 @@
 %html
   %head
+    = partial("partials/head")
   %body
-    %header header
+    %header
+      = partial("partials/header")
     #main{:role => "main"}
       = yield
-    %footer footer
+    %footer
+      = partial("partials/footer")
