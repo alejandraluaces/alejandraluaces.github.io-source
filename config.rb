@@ -9,6 +9,8 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
+page "/blog/index.haml", layout: "blog_post_layout"
+page "/portfolio/index.haml", layout: "portfolio_layout"
 
 activate :autoprefixer
 activate :imageoptim
