@@ -1,0 +1,18 @@
+// --------------------------------------------
+// ### General
+// --------------------------------------------
+
+$html: (
+  fontSize: 16px,
+);
+
+$body: (
+  color: $black,
+  font: $sansSerif,
+  bg: $white
+);
+
+$selection: (
+  bg: transparentize($blue--light, .4),
+  color: $black
+);

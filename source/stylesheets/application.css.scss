@@ -1,8 +1,60 @@
-@import "normalize";
-@import "variables";
+// --------------------------------------------
+// ### Reset
+// --------------------------------------------
 
-@import "animations";
-@import "index";
+@import "00-helpers/reset";
+
+// --------------------------------------------
+// ### Variables
+// --------------------------------------------
+
+@import "00-helpers/variables/01-shared";
+@import "00-helpers/variables/02-base";
+@import "00-helpers/variables/03-atoms";
+@import "00-helpers/variables/04-molecules";
+@import "00-helpers/variables/05-organisms";
+
+// --------------------------------------------
+// ### Extends
+// --------------------------------------------
+
+@import "01-extends/animations";
+@import "01-extends/flexbox";
+@import "01-extends/utilities";
+
+// --------------------------------------------
+// ### Base
+// --------------------------------------------
+
+@import "02-base/general";
+@import "02-base/layout";
+
+// --------------------------------------------
+// ### Atoms
+// --------------------------------------------
+
+@import "03-atoms/buttons";
+@import "03-atoms/icons";
+@import "03-atoms/links";
+@import "03-atoms/lists";
+@import "03-atoms/tags";
+@import "03-atoms/text";
+
+// --------------------------------------------
+// ### Molecules
+// --------------------------------------------
+
+@import "04-molecules/articles";
+@import "04-molecules/blog_post_nav";
+@import "04-molecules/footer_nav";
+@import "04-molecules/header_nav";
+
+// --------------------------------------------
+// ### Organisms
+// --------------------------------------------
+
+// --------------------------------------------
+// ### Templates
+// --------------------------------------------
+
 @import "storybook";
-@import "base";
-@import "layout";

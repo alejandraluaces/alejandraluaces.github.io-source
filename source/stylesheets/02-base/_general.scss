@@ -1,0 +1,29 @@
+// --------------------------------------------
+// ### Box-Sizing
+// --------------------------------------------
+
+* {
+  box-sizing:border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  margin:0;
+  padding:0;
+  text-rendering: optimizeLegibility;
+}
+
+// --------------------------------------------
+// ### Selection
+// --------------------------------------------
+
+::selection {
+  color: inherit;
+  background: map-get($selection, bg);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  color: inherit;
+  background: map-get($selection, bg);
+  text-shadow: none;
+}
