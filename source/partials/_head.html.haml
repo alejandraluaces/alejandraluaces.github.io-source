@@ -1,6 +1,10 @@
 %meta{charset: "utf-8"}
 %title Blog Title#{' - ' + current_article.title unless current_article.nil?}
 
+%script{:src => "//use.typekit.net/jir0eqe.js"}
+:javascript
+  try{Typekit.load();}catch(e){}
+
 = stylesheet_link_tag "application", media: "screen"
 
 - feed_tag :atom, "\#{blog.options.prefix.to_s}/feed.xml", title: "RSS Feed for alejandra.io"
