@@ -1,4 +1,17 @@
+########################################################################
+# Basics
+########################################################################
+
 set :haml, :format => :html5
+set :url_root, 'http://alejandra.io'
+set :css_dir, 'assets/stylesheets'
+set :fonts_dir, 'assets/fonts'
+set :images_dir, 'assets/images'
+set :partials_dir, 'partials'
+
+########################################################################
+# Blog
+########################################################################
 
 activate :blog do |blog|
 
@@ -12,18 +25,34 @@ page "/feed.xml", layout: false
 page "/blog/index.haml", layout: "blog_post_layout"
 page "/portfolio/index.haml", layout: "portfolio_layout"
 
-activate :autoprefixer
-activate :imageoptim
+########################################################################
+# Output
+########################################################################
+
 activate :title, site: 'Alejandra Luaces', separator: ' | '
 activate :syntax
-
 activate :livereload
 
-set :css_dir, 'stylesheets'
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions',
+    'Firefox >= 25',
+    'Android >= 4',
+    'Explorer >= 9',
+    'Opera >= 15',
+    'OperaMini >= 7']
+  config.cascade  = false
+  config.inline   = true
+  end
 
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
+activate :imageoptim do |options|
+  options.manifest = true
+  options.image_extensions = %w(.png .jpg .gif .svg)
+  options.advpng    = { :level => 4 }
+  options.gifsicle  = { :interlace => false }
+  options.jpegoptim = { :strip => ['all'], :max_quality => 100 }
+  options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
+  options.optipng   = { :level => 6, :interlace => false }
+end
 
 configure :build do
 
