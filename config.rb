@@ -4,9 +4,8 @@
 
 set :haml, :format => :html5
 set :url_root, 'http://alejandra.io'
-set :css_dir, 'assets/stylesheets'
-set :fonts_dir, 'assets/fonts'
-set :images_dir, 'assets/images'
+set :css_dir, 'stylesheets'
+set :images_dir, 'images'
 set :partials_dir, 'partials'
 
 ########################################################################
