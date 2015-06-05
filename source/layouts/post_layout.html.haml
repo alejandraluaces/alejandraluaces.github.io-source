@@ -1,4 +1,4 @@
-%article.article__body
+= wrap_layout :layout do
   = yield
   - if current_article
     - current_index = blog.articles.index(current_article)
