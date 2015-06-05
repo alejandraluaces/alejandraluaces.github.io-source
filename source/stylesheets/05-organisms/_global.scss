@@ -2,6 +2,15 @@
 // ### Header
 // --------------------------------------------
 
+.headerMain {
+  @extend %flex--display;
+  @extend %flex--justifyContent__spaceBetween;
+  border-bottom: 1px solid $gray--light;
+  padding: $gutter 0;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
 // --------------------------------------------
 // ### Footer
 // --------------------------------------------

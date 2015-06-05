@@ -1,9 +1,9 @@
 %meta{charset: "utf-8"}
+%meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+
 %title Blog Title#{' - ' + current_article.title unless current_article.nil?}
 
-%script{:src => "//use.typekit.net/jir0eqe.js"}
-:javascript
-  try{Typekit.load();}catch(e){}
+%link{:href => "http://fonts.googleapis.com/css?family=Lato:300,700,300italic|Playfair+Display:700", :rel => "stylesheet", :type => "text/css"}/
 
 = stylesheet_link_tag "application", media: "screen"
 

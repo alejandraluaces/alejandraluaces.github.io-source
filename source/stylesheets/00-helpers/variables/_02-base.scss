@@ -3,16 +3,17 @@
 // --------------------------------------------
 
 $html: (
-  fontSize: 16px,
+  fontSize: 18px,
 );
 
 $body: (
   color: $black,
   font: $sansSerif,
+  fontWeight: 300,
   bg: $white
 );
 
 $selection: (
-  bg: transparentize($blue--light, .4),
+  bg: transparentize($pop, .4),
   color: $black
 );

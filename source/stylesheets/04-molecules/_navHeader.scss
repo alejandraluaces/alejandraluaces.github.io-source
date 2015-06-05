@@ -1,0 +1,22 @@
+// --------------------------------------------
+// ### Items
+// --------------------------------------------
+
+.navHeader__list {
+  @extend %flex--display;
+  padding-top: 1px;
+}
+
+.navHeader__item {
+  list-style-type: none;
+  margin-right: $gutter/3;
+  display: inline;
+  font-size: map-get($navHeader, fontSize)
+}
+
+.navHeader__link {
+  color: map-get($navHeader__link, color);
+  &:hover {
+    color: map-get($navHeader__link, hover);
+  }
+}
