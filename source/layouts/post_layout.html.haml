@@ -1,16 +1,17 @@
-%article.article__body
-  = yield
-  - if current_article
-    - current_index = blog.articles.index(current_article)
-    - next_blog = blog.articles[current_index - 1] if current_index > 0
-    - prev_blog = blog.articles[current_index + 1] if current_index < blog.articles.length - 1
-    - if prev_blog
-      %div
-        Previous article:
-        %a{:href => prev_blog.url}
-          = prev_blog.title
-    - if next_blog
-      %div
-        Next article:
-        %a{:href => next_blog.url}
-          = next_blog.title
+= wrap_layout :layout do
+  %article.article__body
+    = yield
+    - if current_article
+      - current_index = blog.articles.index(current_article)
+      - next_blog = blog.articles[current_index - 1] if current_index > 0
+      - prev_blog = blog.articles[current_index + 1] if current_index < blog.articles.length - 1
+      - if prev_blog
+        %div
+          Previous article:
+          %a{:href => prev_blog.url}
+            = prev_blog.title
+      - if next_blog
+        %div
+          Next article:
+          %a{:href => next_blog.url}
+            = next_blog.title
