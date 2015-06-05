@@ -1,12 +1,8 @@
----
-layout: portfolio_layout
----
-
 - data.portfolio_items.each do |portfolio_item|
   .portfolio-item-card
     %h1= portfolio_item["title"]
     %div
       %img{:src => "/images/#{portfolio_item["image"]}"}
     %div
-      %a{:href => "/portfolio/#{portfolio_item["more_info_markdown_file_name"]}.html"}
+      %a{:href => "/work/#{portfolio_item["more_info_markdown_file_name"]}.html"}
         = portfolio_item["description"]

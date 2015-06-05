@@ -14,15 +14,20 @@ set :partials_dir, 'partials'
 
 activate :blog do |blog|
 
-  blog.prefix = "blog"
+  blog.prefix = "writing"
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
+  blog.sources = "source/:title.html"
+  blog.permalink = "source/{title}.html"
 
 end
 
 page "/feed.xml", layout: false
-page "/blog/index.haml", layout: "blog_post_layout"
-page "/portfolio/index.haml", layout: "portfolio_layout"
+page "/calendar.haml", layout: false
+
+page "*", layout: "layout"
+page "writing/*", layout: "post_layout"
+page "work.index.html", layout: "portfolio_layout"
 
 ########################################################################
 # Output
@@ -42,16 +47,6 @@ activate :autoprefixer do |config|
   config.cascade  = false
   config.inline   = true
   end
-
-activate :imageoptim do |options|
-  options.manifest = true
-  options.image_extensions = %w(.png .jpg .gif .svg)
-  options.advpng    = { :level => 4 }
-  options.gifsicle  = { :interlace => false }
-  options.jpegoptim = { :strip => ['all'], :max_quality => 100 }
-  options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
-  options.optipng   = { :level => 6, :interlace => false }
-end
 
 configure :build do
 
