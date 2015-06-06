@@ -2,12 +2,12 @@
 // ### Colors
 // --------------------------------------------
 
-$white: #fff;
-$gray--light: #f4f4f4;
-$gray: #ccc;
-$gray--dark: #777;
+$white: #f9f9f9;
+$gray--light: #e0e0e0;
+$gray: #999;
+$gray--dark: #666;
 $black: #333;
-$pop: #ff5555;
+$pop: #FF6347;
 
 // --------------------------------------------
 // ### Fonts
@@ -15,6 +15,11 @@ $pop: #ff5555;
 
 $sansSerif: "Lato", Helvetica, sans-serif;
 $display: "Playfair Display", serif;
+
+$fontWeight: (
+  bold: 700,
+  light: 300
+);
 
 // --------------------------------------------
 // ### Transitions

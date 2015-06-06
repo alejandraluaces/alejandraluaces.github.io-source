@@ -1,17 +1,68 @@
 // --------------------------------------------
 // ### Article Styles
 //
-// - General styles
-// - Article images
+// - Container
+// - Elements
 //
 // --------------------------------------------
 
 // --------------------------------------------
-// ### General
+// ### Container
 // --------------------------------------------
 
+%articleContainer {
+  margin: 0 auto;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 70%;
+    max-width: 650px;
+  }
+}
 
+.article__info {
+  @extend %articleContainer;
+  @extend %group;
+  margin: 0 auto $gutter auto;
+}
+
+.article__body {
+  @extend %articleContainer;
+  line-height: 1.736;
+}
 
 // --------------------------------------------
-// ### Article Images
+// ### Elements
 // --------------------------------------------
+
+.article__title {
+  font-family: $display;
+  font-size: 4.768em;
+  width: 100%;
+  margin-bottom: $gutter*2;
+  @media screen and (min-width: 768px) {
+    max-width: 80%;
+    line-height: .99;
+  }
+}
+
+.article__meta {
+  float: none;
+  display: block;
+  @media screen and (min-width: 768px) {
+    float: left;
+    margin: 7px 0 0 -20%;
+  }
+}
+
+.article__footer {
+  border-top: 1px solid $gray--light;
+}
+
+.article__description {
+  font-family: $display;
+  color: $gray;
+  font-weight: 200;
+  line-height: 1.6;
+  font-size: 1.2em;
+  margin-bottom: $gutter*2;
+}
