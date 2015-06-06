@@ -1,16 +1,34 @@
 = wrap_layout :layout do
-  = yield
-  - if current_article
-    - current_index = blog.articles.index(current_article)
-    - next_blog = blog.articles[current_index - 1] if current_index > 0
-    - prev_blog = blog.articles[current_index + 1] if current_index < blog.articles.length - 1
-    - if prev_blog
-      %div
-        Previous article:
-        %a{:href => prev_blog.url}
-          = prev_blog.title
-    - if next_blog
-      %div
-        Next article:
-        %a{:href => next_blog.url}
-          = next_blog.title
+
+  - if is_blog_article?
+    %article.article__container
+      %h2.article__title= current_article.title
+      %h3.article__subtitle
+      %aside.article__info
+        %time.date{ :datetime => "#{current_article.date}" }
+          = current_article.date.strftime("%B ’%y")
+        %dl.tags
+          - if current_article.tags.present?
+            %dt.tags__title about
+            %dd.tags__item
+              - current_article.tags.each do |tag|
+                = link_to tag, tag_path(tag), class: "tag__link"
+
+      %section.article__body
+        = yield
+
+  %footer.article__footer
+    - if current_article
+      - current_index = blog.articles.index(current_article)
+      - next_blog = blog.articles[current_index - 1] if current_index > 0
+      - prev_blog = blog.articles[current_index + 1] if current_index < blog.articles.length - 1
+      - if prev_blog
+        %div
+          Previous article:
+          %a{:href => prev_blog.url}
+            = prev_blog.title
+      - if next_blog
+        %div
+          Next article:
+          %a{:href => next_blog.url}
+            = next_blog.title
