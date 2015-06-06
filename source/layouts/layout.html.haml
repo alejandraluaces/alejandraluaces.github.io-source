@@ -1,10 +1,11 @@
 %html
   %head
     = partial("partials/head")
-  %body.contentContainer
+  %body.bodyLayout
     %header.headerMain
       = partial("partials/header")
-    #main.contentMain{:role => "main"}
-      = yield
+    %section.contentMain
+      #main{:role => "main"}
+        = yield
     %footer.footerMain
       = partial("partials/footer")
