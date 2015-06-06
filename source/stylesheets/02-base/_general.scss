@@ -12,6 +12,14 @@
   text-rendering: optimizeLegibility;
 }
 
+body {
+  @extend %flexboxLayout;
+  background-color: map-get($body, bg);
+  font-family: map-get($body, fontFamily);
+  font-weight: map-get($body, fontWeight);
+  color: map-get($body, color);
+}
+
 // --------------------------------------------
 // ### Selection
 // --------------------------------------------

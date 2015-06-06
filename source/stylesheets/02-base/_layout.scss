@@ -1,13 +1,24 @@
 // --------------------------------------------
-// ### Containers
+// ### General
 // --------------------------------------------
 
-%l--container {
-  @extend .group;
-  margin-bottom: $gutter;
+.contentContainer {
+  max-width: 67.29em;
+  margin: 0 auto;
+  padding: 0 $gutter;
 }
 
-.content {
-  max-width: 900px;
-  margin: 0 auto;
+.contentMain {
+  padding: 0 $gutter;
+  flex: 1;
+}
+
+// --------------------------------------------
+// ### Flexbox Grid
+// --------------------------------------------
+
+%flexboxLayout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }

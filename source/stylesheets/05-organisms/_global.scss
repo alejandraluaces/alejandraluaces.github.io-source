@@ -14,3 +14,12 @@
 // --------------------------------------------
 // ### Footer
 // --------------------------------------------
+
+.footerMain {
+  @extend %flex--display;
+  @extend %flex--justifyContent__spaceBetween;
+  border-top: 1px solid $gray--light;
+  padding: $gutter;
+  align-items: center;
+  margin-top: 2em;
+}
