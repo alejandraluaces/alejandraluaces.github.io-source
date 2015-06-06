@@ -1,7 +1,8 @@
 .headerName {
-  font-size: 1.688em;
+  font-size: 1em;
+  font-weight: map-get($headerName, fontWeight)
 }
 
 .headerName__link {
-  color: tomato;
+  color: $black;
 }

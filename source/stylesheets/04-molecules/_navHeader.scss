@@ -9,7 +9,6 @@
 
 .navHeader__item {
   list-style-type: none;
-  margin-right: $gutter/3;
   display: inline;
   font-size: map-get($navHeader, fontSize)
 }

@@ -6,3 +6,8 @@ a {
     @include defaultTransition;
   }
 }
+
+.currentPage {
+  color: $pop;
+  font-weight: map-get($fontWeight, bold);
+}

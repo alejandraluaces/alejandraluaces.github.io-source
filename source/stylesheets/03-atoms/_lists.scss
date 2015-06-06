@@ -2,6 +2,14 @@
 // ### General
 // --------------------------------------------
 
+ul > li {
+  display: inline;
+  margin-right: $gutter;
+  &:last-child {
+    margin: 0;
+  }
+}
+
 li {
-  display: block;
+  list-style-type: none;
 }
