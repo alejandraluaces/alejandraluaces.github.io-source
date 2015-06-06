@@ -19,6 +19,7 @@ activate :blog do |blog|
   blog.calendar_template = "calendar.html"
   blog.sources = "source/:title.html"
   blog.permalink = "source/{title}.html"
+  blog.tag_template = "tag.html"
 
 end
 
