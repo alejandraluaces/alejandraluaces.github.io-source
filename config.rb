@@ -26,8 +26,8 @@ page "/feed.xml", layout: false
 page "/calendar.haml", layout: false
 
 page "*", layout: "layout"
-page "writing/*", layout: "post_layout"
-page "work.index.html", layout: "portfolio_layout"
+page "writing/source/*", layout: "post_layout"
+page "work/index.html", layout: "portfolio_layout"
 
 ########################################################################
 # Output
