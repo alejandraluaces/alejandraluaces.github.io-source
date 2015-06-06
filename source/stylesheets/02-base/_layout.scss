@@ -1,24 +1,42 @@
 // --------------------------------------------
-// ### General
-// --------------------------------------------
-
-.contentContainer {
-  max-width: 67.29em;
-  margin: 0 auto;
-  padding: 0 $gutter;
-}
-
-.contentMain {
-  padding: 0 $gutter;
-  flex: 1;
-}
-
-// --------------------------------------------
 // ### Flexbox Grid
 // --------------------------------------------
 
-%flexboxLayout {
+%flexboxLayout--page {
   display: flex;
-  min-height: 100vh;
+  min-height: 100%;
   flex-direction: column;
 }
+
+%flexboxLayout--headerFooter {
+  @extend %flex--display;
+  @extend %flex--justifyContent__spaceBetween;
+  align-items: center;
+  padding: $gutter*2 $gutter;
+}
+
+// --------------------------------------------
+// ### General
+// --------------------------------------------
+
+.bodyLayout {
+  @extend %flexboxLayout--page;
+  padding: 0 $gutter;
+  width: 80%;
+  max-width: 63.29em;
+  margin: 0 auto;
+}
+
+.contentMain {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+// --------------------------------------------
+// ### Breakpoints
+// --------------------------------------------
+
+@custom-media --break-sm (min-width: 384px);
+@custom-media --break-md (min-width: 576px);
+@custom-media --break-lg (min-width: 768px);

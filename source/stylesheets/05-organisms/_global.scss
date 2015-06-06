@@ -3,11 +3,8 @@
 // --------------------------------------------
 
 .headerMain {
-  @extend %flex--display;
-  @extend %flex--justifyContent__spaceBetween;
+  @extend %flexboxLayout--headerFooter;
   border-bottom: 1px solid $gray--light;
-  padding: $gutter 0;
-  align-items: center;
   margin-bottom: 2em;
 }
 
@@ -16,10 +13,7 @@
 // --------------------------------------------
 
 .footerMain {
-  @extend %flex--display;
-  @extend %flex--justifyContent__spaceBetween;
+  @extend %flexboxLayout--headerFooter;
   border-top: 1px solid $gray--light;
-  padding: $gutter;
-  align-items: center;
   margin-top: 2em;
 }
