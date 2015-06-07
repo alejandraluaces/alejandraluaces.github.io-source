@@ -11,7 +11,7 @@
 %flexboxLayout--headerFooter {
   @extend %flex--display;
   @extend %flex--justifyContent__spaceBetween;
-  align-items: center;
+  align: center;
   padding: $gutter*2 $gutter;
 }
 
