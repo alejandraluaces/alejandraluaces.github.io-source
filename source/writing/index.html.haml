@@ -3,6 +3,7 @@
     %li
       = link_to article.title, article
       %span= article.date.strftime('%b %e')
+    %h4= article.metadata[:page]["description"]
 %h2 Topics
 %ol
   - blog.tags.each do |tag, articles|

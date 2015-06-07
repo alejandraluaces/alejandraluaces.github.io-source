@@ -4,18 +4,18 @@
     %article
       %header.article__header
         %h2.article__title= current_article.title
-      %section.article__info
-        %aside.article__meta
-          %h5.time__title on
-          %time.date{ :datetime => "#{current_article.date}" }
-            = current_article.date.strftime("%B ’%y")
-          %dl.tags
-            - if current_article.tags.present?
-              %dt.tags__title about
-              %dd.tags__item
-                - current_article.tags.each do |tag|
-                  = link_to tag, tag_path(tag), class: "tag__link"
-        %h3.article__description At a crossroads in my professional life, I often find myself reflecting on what is “right” or “good” ethically, for my future, and the positives I experienced at each workplace.
+        %section.article__info
+          %aside.article__meta
+            %h5.time__title on
+            %time.date{ :datetime => "#{current_article.date}" }
+              = current_article.date.strftime("%B ’%y")
+            %dl.tags
+              - if current_article.tags.present?
+                %dt.tags__title about
+                %dd.tags__item
+                  - current_article.tags.each do |tag|
+                    = link_to tag, tag_path(tag), class: "tag__link"
+          %h3.article__description=current_article.metadata[:page]["description"]
 
       %section.article__body
         = yield
