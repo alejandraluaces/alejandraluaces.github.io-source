@@ -52,3 +52,11 @@ activate :autoprefixer do |config|
 configure :build do
 
 end
+
+helpers do
+  def navbar_link_to(title, url)
+    classes = ["navHeader__link"]
+    classes << "currentPage" if current_page.url == url
+    link_to title, url, class: classes.join(' ')
+  end
+end
