@@ -18,6 +18,9 @@
 %flexboxLayout--pagination {
   @extend %flex--display;
   flex-direction: column;
+  @media screen and (min-width: 576px) {
+    flex-direction: row;
+  }
 }
 
 // --------------------------------------------
@@ -30,6 +33,9 @@
   width: 100%;
   max-width: 63.29em;
   margin: 0 auto;
+  @media screen and (min-width: 576px) {
+    width: 80%;
+  }
 }
 
 .contentMain {
@@ -37,11 +43,3 @@
   flex: 1 0 auto;
   flex-direction: column;
 }
-
-// --------------------------------------------
-// ### Breakpoints
-// --------------------------------------------
-
-@custom-media --break-sm (min-width: 384px);
-@custom-media --break-md (min-width: 576px);
-@custom-media --break-lg (min-width: 768px);
