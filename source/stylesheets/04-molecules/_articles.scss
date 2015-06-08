@@ -24,6 +24,9 @@
   @extend %articleContainer;
   @extend %group;
   margin: 0 auto $gutter auto;
+  @media screen and (max-width: 430px) {
+    margin: 0;
+  }
 }
 
 .article__body {
@@ -31,6 +34,9 @@
   line-height: 1.736;
   & > p {
     margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 2em;
+    }
   }
 }
 
@@ -48,6 +54,8 @@
     margin-bottom: $gutter*2;
     font-size: 4.292em;
   }
+  @media screen and (max-width: 430px) {
+    text-align: center;
   }
 }
 
@@ -61,6 +69,9 @@
     padding-top: $gutter/2;
     border-top: 2px solid #ccc;
   }
+  @media screen and (max-width: 430px) {
+    margin-bottom: $gutter;
+    text-align: center;
   }
 }
 
@@ -76,13 +87,25 @@
     font-size: 1.25em;
     border: 0;
   }
+  @media screen and (max-width: 430px) {
+    font-family: $sansSerif;
+    font-style: italic;
+    text-align: center;
+  }
 }
 
 .time__title,
 .tags__title, {
   @extend .scale--7;
   margin-bottom: 5px;
+  @media screen and (max-width: 430px) {
     display: inline;
+    font-family: $display;
+    font-size: .8em;
+    color: $gray--dark;
+    font-weight: 200;
+    text-transform: capitalize;
+  }
 }
 
 .date,
@@ -90,10 +113,19 @@
   font-family: $display;
   font-size: .8em;
   color: $gray--dark;
+  @media screen and (max-width: 430px) {
+    display: inline;
+    &:after {
+      display: '\002C';
+    }
+  }
 }
 
 .time {
   margin-bottom: $gutter;
+  @media screen and (max-width: 430px) {
+    margin-bottom: 0;
+  }
 }
 
 // --------------------------------------------
@@ -126,4 +158,7 @@
 
 %pagination--summary__item {
   flex: 1 0 auto;
+  @media screen and (max-width: 430px) {
+    text-align: center;
+  }
 }
