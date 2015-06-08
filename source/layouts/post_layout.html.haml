@@ -30,16 +30,16 @@
             %li.pagination--summary__item.pagination--summary--prev
               - if prev_blog
                 = link_to prev_blog.url, class: "pagination--summary__link" do
-                  %h7.pagination--summary__heading previous article
+                  %h6.pagination--summary__heading &larr; previous article
                   %dl.time
                     %time.date{ :datetime => "#{prev_blog.date}" }
                       = prev_blog.date.strftime("%B %e, %Y")
-                  %h4= prev_blog.title
+                  %h5.pagination--summary__title= prev_blog.title
             %li.pagination--summary__item.pagination--summary--next
               - if next_blog
                 = link_to next_blog.url, class: "pagination--summary__link" do
-                  %h7.pagination--summary__heading next article
+                  %h6.pagination--summary__heading next article &rarr;
                   %dl.time
                     %time.date{ :datetime => "#{next_blog.date}" }
                       = next_blog.date.strftime("%B %e, %Y")
-                  %h4= next_blog.title
+                  %h5.pagination--summary__title= next_blog.title
