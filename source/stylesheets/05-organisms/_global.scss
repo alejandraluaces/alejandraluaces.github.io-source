@@ -3,7 +3,7 @@
 // --------------------------------------------
 
 .headerMain {
-  @extend %flexboxLayout--headerFooter;
+  @extend %flexboxLayout--nav;
   border-bottom: 1px solid $gray--light;
   margin-bottom: 2em;
   flex-shrink: 0;
@@ -23,7 +23,6 @@
 // --------------------------------------------
 
 .footerMain {
-  @extend %flexboxLayout--headerFooter;
+  @extend %flexboxLayout--nav;
   border-top: 1px solid $gray--light;
-  margin-top: 2em;
 }

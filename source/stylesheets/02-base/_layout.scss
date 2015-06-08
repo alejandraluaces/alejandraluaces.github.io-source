@@ -8,11 +8,16 @@
   flex-direction: column;
 }
 
-%flexboxLayout--headerFooter {
+%flexboxLayout--nav {
   @extend %flex--display;
   @extend %flex--justifyContent__spaceBetween;
   align: center;
   padding: $gutter*2 $gutter;
+}
+
+%flexboxLayout--pagination {
+  @extend %flex--display;
+  flex-direction: column;
 }
 
 // --------------------------------------------
@@ -22,7 +27,7 @@
 .bodyLayout {
   @extend %flexboxLayout--page;
   padding: 0 $gutter;
-  width: 80%;
+  width: 100%;
   max-width: 63.29em;
   margin: 0 auto;
 }

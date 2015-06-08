@@ -2,7 +2,8 @@
 // ### Article Styles
 //
 // - Container
-// - Elements
+// - Main Article Elements
+// - Aricle Footer Nav
 //
 // --------------------------------------------
 
@@ -34,38 +35,94 @@
 }
 
 // --------------------------------------------
-// ### Elements
+// ### Main Article Elements
 // --------------------------------------------
 
 .article__title {
   font-family: $display;
-  font-size: 4.768em;
   width: 100%;
-  margin-bottom: $gutter*2;
+  font-size: 2.5em;
   @media screen and (min-width: 768px) {
     max-width: 90%;
     line-height: .99;
+    margin-bottom: $gutter*2;
+    font-size: 4.292em;
+  }
   }
 }
 
 .article__meta {
+  min-width: 4.768em;
   float: none;
   display: block;
   @media screen and (min-width: 768px) {
     float: left;
-    margin: 7px 0 0 -20%;
+    margin: 16px 0 0 -20%;
+    padding-top: $gutter/2;
+    border-top: 2px solid #ccc;
+  }
   }
 }
 
-.article__footer {
-  border-top: 1px solid $gray--light;
-}
-
 .article__description {
+  @extend .scale--5;
   font-family: $display;
   color: $gray;
-  font-weight: 200;
-  line-height: 1.6;
-  font-size: 1.2em;
-  margin-bottom: $gutter*2;
+  margin-bottom: $gutter;
+  line-height: 1.5;
+  border-bottom: 1px solid $gray--light;
+  padding-bottom: $gutter;
+  @media screen and (min-width: 768px) {
+    font-size: 1.25em;
+    border: 0;
+  }
+}
+
+.time__title,
+.tags__title, {
+  @extend .scale--7;
+  margin-bottom: 5px;
+}
+
+.date,
+.tags__item {
+  font-family: $display;
+  font-size: .8em;
+  color: $gray--dark;
+}
+
+.time {
+  margin-bottom: $gutter;
+}
+
+// --------------------------------------------
+// ### Article Footer Nav
+// --------------------------------------------
+
+.pagination--summary {
+  border-top: 1px solid $gray--light;
+  padding: $gutter*2 $gutter;
+}
+
+.pagination--summary--next {
+  @extend %pagination--summary__item;
+  text-align: right;
+}
+
+.pagination--summary--prev {
+  @extend %pagination--summary__item;
+  margin-bottom: $gutter;
+}
+
+.pagination--summary__heading {
+  @extend .scale--7;
+  margin-bottom: $gutter;
+}
+
+.pagination--summary__list {
+  @extend %flexboxLayout--pagination;
+}
+
+%pagination--summary__item {
+  flex: 1 0 auto;
 }
