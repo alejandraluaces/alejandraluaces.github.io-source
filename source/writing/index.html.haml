@@ -7,3 +7,4 @@
           %dt.articlesMain__heading= article.title
           %time.date= article.date.strftime("%B %e, %Y")
         %p.articlesMain__description= article.metadata[:page]["description"]
+        %a{:href =>article.url, class: "articlesMain__bodyLink"} Read More &rarr;
