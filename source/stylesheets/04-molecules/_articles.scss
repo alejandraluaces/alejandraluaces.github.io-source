@@ -203,6 +203,47 @@
 // ### Article Previews
 // --------------------------------------------
 
-.articlesContainer {
+.articlesMain {
   @extend %articleContainer;
+  .date {
+    @extend .scale--7;
+  }
+}
+
+.articlesMain__item {
+  margin-bottom: 2em;
+}
+
+.articlesMain__link {
+  display: block;
+}
+
+.articlesMain__header {
+  margin-bottom: .5em;
+}
+
+.articlesMain__heading {
+  @extend .scale--4;
+  margin-bottom: .2em;
+  color: tomato;
+}
+
+.articlesMain__description {
+  color: $black;
+  text-decoration: none;
+  line-height: 1.736;
+  & > p {
+    margin-bottom: 1em;
+  }
+}
+
+.tags {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.tag {
+  &:after {
+    display: ",";
+  }
 }

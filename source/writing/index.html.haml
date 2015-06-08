@@ -1,13 +1,9 @@
-.articlesContainer
-  %ol
-    - blog.articles.each do |article|
-      %dl.articleSummary
-        = link_to article
-        %dt.scale--4= article.title
-        %span= article.date.strftime('%b %e')
-      %p= article.metadata[:page]["description"]
+.articlesMain
 
-  %h2 Topics
-  %ol
-    - blog.tags.each do |tag, articles|
-      %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+  - blog.articles.each do |article|
+    %dl.articlesMain__item
+      %a{:href =>article.url, class: "articlesMain__link"}
+        %header.articlesMain__header
+          %dt.articlesMain__heading= article.title
+          %time.date= article.date.strftime("%B %e, %Y")
+        %p.articlesMain__description= article.metadata[:page]["description"]
