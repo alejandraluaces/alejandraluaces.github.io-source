@@ -1,0 +1,52 @@
+
+
+  // - Extends
+  // - Scaled Heading Classes
+  // - Headings
+  // - Paragraphs
+  // - Blockquotes
+  // - Dates
+  // - Status
+  // - Tags
+
+// --------------------------------------------
+// ### Headings
+// --------------------------------------------
+
+%heading {
+
+  a {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      opacity: 80%;
+    }
+  }
+}
+
+$sizes:
+    scale--1 4.768em  $display     $black    map-get($fontWeight, bold)    false
+  , scale--2 3.052em  $sansSerif   $black    map-get($fontWeight, light)   false
+  , scale--3 1.758em  $display     $black    map-get($fontWeight, light)   false
+  , scale--4 1.758em  $sansSerif   $black    map-get($fontWeight, bold)    false
+  , scale--5 1.25em   $sansSerif   $black    map-get($fontWeight, light)   false
+  , scale--6 .9em     $display     $black    map-get($fontWeight, light)   false
+  , scale--7 .64em    $sansSerif   #ccc     map-get($fontWeight, bold)    true;
+
+@each $scale in $sizes {
+  .#{nth($scale, 1)} {
+    font-size: #{nth($scale, 2)};
+    font-family: #{nth($scale, 3)};
+    color: #{nth($scale, 4)};
+    font-weight: #{nth($scale, 5)};
+
+    @if nth($scale, 6) {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.scale--7 {
+  letter-spacing: 1px;
+}
