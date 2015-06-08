@@ -1,10 +1,13 @@
-%ol
-  - blog.articles.each do |article|
-    %li
-      = link_to article.title, article
-      %span= article.date.strftime('%b %e')
-    %h4= article.metadata[:page]["description"]
-%h2 Topics
-%ol
-  - blog.tags.each do |tag, articles|
-    %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+.articlesContainer
+  %ol
+    - blog.articles.each do |article|
+      %dl.articleSummary
+        = link_to article
+        %dt.scale--4= article.title
+        %span= article.date.strftime('%b %e')
+      %p= article.metadata[:page]["description"]
+
+  %h2 Topics
+  %ol
+    - blog.tags.each do |tag, articles|
+      %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
