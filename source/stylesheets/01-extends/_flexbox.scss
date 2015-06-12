@@ -1,5 +1,5 @@
 // --------------------------------------------
-// ### Flexbox
+// ### Individual Flexbox properties
 // --------------------------------------------
 
 %flex--display {
@@ -26,10 +26,15 @@
   align-items: center;
 }
 
-%flex--alignItems__stretch {
-  align-items: stretch;
+// --------------------------------------------
+// ### Flexbox grid
+// --------------------------------------------
+
+%flexboxGrid {
+  @extend %flex--display;
 }
 
-%flex--alignContent__stretch {
-  align-content: stretch;
+%flexboxGrid__cell {
+  @extend %flex--display;
+  flex: 1;
 }
