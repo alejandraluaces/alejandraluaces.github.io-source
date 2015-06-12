@@ -1,15 +1,42 @@
 [
+
   {
-    "title": "First Portfolio Item",
-    "image": "airplane.png",
-    "description": "This is an awesome portfolio item",
-    "more_info_markdown_file_name": "first_portfolio_item"
+    "title": "Gesture",
+    "tags": "UX, design",
+    "image": "gesture.jpg",
+    "link": "http://gesture.com/",
+    "action": "See more"
   },
 
   {
-    "title": "Second Portfolio Item",
-    "image": "alligator.png",
-    "description": "This is an awesome portfolio item",
-    "more_info_markdown_file_name": "second_portfolio_item"
+    "title": "Women on Call",
+    "tags": "UX, design, development",
+    "image": "woc.jpg",
+    "link": "http://womenoncall.org/",
+    "action": "See more"
+  },
+
+  {
+    "title": "Field Museum",
+    "image": "field.jpg",
+    "tags": "development",
+    "link": "http://fieldmuseum.org/",
+    "action": "See more"
+  },
+
+  {
+    "title": "Chidry",
+    "image": "chidry.jpg",
+    "tags": "UX, design, development",
+    "link": "http://www.chidry.com",
+    "action": "See more"
+  },
+
+  {
+    "title": "Illustration",
+    "image": "illustration.jpg",
+    "tags": "various",
+    "link": "https://dribbble.com/alejandraluaces",
+    "action": "See more"
   }
 ]

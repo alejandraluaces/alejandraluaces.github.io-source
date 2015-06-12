@@ -1,8 +1,11 @@
-- data.portfolio_items.each do |portfolio_item|
-  .portfolio-item-card
-    %h1= portfolio_item["title"]
-    %div
-      %img{:src => "/images/#{portfolio_item["image"]}"}
-    %div
-      %a{:href => "/work/#{portfolio_item["more_info_markdown_file_name"]}.html"}
-        = portfolio_item["description"]
+%section
+  .portfolioMain
+    - data.portfolio_items.each do |portfolio_item|
+      %a{:href => "#{portfolio_item["link"]}", class: "portfolioItem__link"}
+        %figure.portfolioItem
+          .portfolioItem__imageContainer
+            %img{:src => "../images/#{portfolio_item["image"]}", class: "portfolioItem__image"}
+            %figcaption.portfolioItem__caption= portfolio_item["action"]
+          %hr.portfolioItem__break
+          %dt.portfolioItem__name= portfolio_item["title"]
+          %dd.portfolioItem__tags= portfolio_item["tags"]
