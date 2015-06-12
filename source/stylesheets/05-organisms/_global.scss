@@ -5,7 +5,6 @@
 .headerMain {
   @extend %flexboxLayout--nav;
   border-bottom: 1px solid $gray--light;
-  margin-bottom: 2em;
   flex-shrink: 0;
 }
 
