@@ -1,0 +1,59 @@
+
+// --------------------------------------------
+// ### Article Footer Nav
+// --------------------------------------------
+
+.pagination--summary {
+  border-top: 1px solid $gray--light;
+  padding: $gutter*2 $gutter;
+
+  .time {
+    margin-bottom: 0;
+  }
+}
+
+.pagination--summary--next {
+  @extend %pagination--summary__item;
+  text-align: right;
+  border-left: 1px solid $gray--light;
+
+  @media screen and (max-width: 430px) {
+    border-left: 0;
+    border-top: 1px solid $gray--light;
+    padding-top: $gutter;
+  }
+}
+
+.pagination--summary--prev {
+  @extend %pagination--summary__item;
+}
+
+.pagination--summary__list {
+  @extend %flexboxLayout--pagination;
+}
+
+.pagination--summary__heading {
+  @extend .scale--7;
+  margin-bottom: 1em;
+
+  @media screen and (max-width: 430px) {
+    margin: 0;
+  }
+}
+
+.pagination--summary__title {
+  @extend .scale--4;
+}
+
+%pagination--summary__item {
+  flex: 1 0 auto;
+  @include defaultTransition;
+
+  @media screen and (max-width: 430px) {
+    text-align: center;
+    .pagination--summary__title,
+    .time {
+      display:none;
+    }
+  }
+}

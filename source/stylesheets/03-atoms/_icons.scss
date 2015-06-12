@@ -1,0 +1,12 @@
+.icon {
+  display: inline-block;
+  margin-right: 1em;
+  padding-bottom: $gutter;
+  fill: $gray;
+  display: block;
+
+  a:hover & {
+    fill: $pop;
+    transition: .2s all ease-in-out;
+  }
+}
