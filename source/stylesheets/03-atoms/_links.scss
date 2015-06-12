@@ -1,9 +1,12 @@
 a {
   text-decoration: none;
+  color: inherit;
+
   &:hover,
-  &:visited,
+  &:active,
   &:focus {
     @include defaultTransition;
+    color: $pop;
   }
 }
 
