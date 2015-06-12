@@ -10,7 +10,8 @@
 .navHeader__item {
   list-style-type: none;
   display: inline;
-  font-size: map-get($navHeader, fontSize)
+  font-size: map-get($navHeader, fontSize);
+  margin-right: 2em;
 }
 
 .navHeader__link {

@@ -6,11 +6,29 @@
   @extend %flexboxLayout--nav;
   border-bottom: 1px solid $gray--light;
   flex-shrink: 0;
+  padding: $gutter*2 $gutter;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+  }
 }
 
 .headerName {
   font-size: 1em;
-  font-weight: map-get($headerName, fontWeight)
+  font-weight: map-get($headerName, fontWeight);
+  margin-bottom: 1em;
+  @media screen and (min-width: 550px) {
+    margin-bottom: 0;
+  }
+}
+
+.hideonmobile {
+
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
 }
 
 .headerName__link {
@@ -48,18 +66,5 @@
 
   a {
     font-weight: 600;
-  }
-}
-
-.icon {
-  display: inline-block;
-  margin-right: 1em;
-  padding-bottom: $gutter;
-  fill: $gray;
-  display: block;
-
-  a:hover & {
-    fill: $pop;
-    transition: .2s all ease-in-out;
   }
 }

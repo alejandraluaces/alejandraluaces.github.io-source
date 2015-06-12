@@ -12,12 +12,12 @@
   @extend %flex--display;
   @extend %flex--justifyContent__spaceBetween;
   align: center;
-  padding: $gutter*2 $gutter;
 }
 
 %flexboxLayout--pagination {
   @extend %flex--display;
   flex-direction: column;
+
   @media screen and (min-width: 576px) {
     flex-direction: row;
   }
@@ -33,6 +33,7 @@
   width: 100%;
   max-width: 63.29em;
   margin: 0 auto;
+
   @media screen and (min-width: 576px) {
     width: 80%;
   }
