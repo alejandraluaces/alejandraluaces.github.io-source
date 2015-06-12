@@ -53,6 +53,8 @@
   width: 100%;
   text-align: center;
   font-size: 4.292em;
+  line-height: .85;
+  margin-bottom: .25em;
 
   @media screen and (min-width: 905px) {
     max-width: 90%;
@@ -121,6 +123,12 @@
     font-weight: 200;
     text-transform: capitalize;
   }
+
+  @media screen and (max-width: 430px) {
+    text-transform: uppercase;
+    font-weight: map-get($fontWeight, bold);
+    font-family: $sansSerif;
+  }
 }
 
 .date,
@@ -128,6 +136,13 @@
   font-family: $display;
   font-size: .8em;
   color: $gray--dark;
+
+  @media screen and (max-width: 430px) {
+    font-family: $sansSerif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $gray;
+  }
 
   @media screen and (max-width: 768px) {
     display: inline;
@@ -151,7 +166,8 @@
 
 .pagination--summary {
   border-top: 1px solid $gray--light;
-  padding: $gutter;
+  padding: $gutter*2 $gutter;
+
   .time {
     margin-bottom: 0;
   }
@@ -161,6 +177,7 @@
   @extend %pagination--summary__item;
   text-align: right;
   border-left: 1px solid $gray--light;
+
   @media screen and (max-width: 430px) {
     border-left: 0;
     border-top: 1px solid $gray--light;
@@ -170,7 +187,6 @@
 
 .pagination--summary--prev {
   @extend %pagination--summary__item;
-  margin-bottom: $gutter;
 }
 
 .pagination--summary__list {
@@ -180,6 +196,7 @@
 .pagination--summary__heading {
   @extend .scale--7;
   margin-bottom: 1em;
+
   @media screen and (max-width: 430px) {
     margin: 0;
   }
@@ -191,6 +208,8 @@
 
 %pagination--summary__item {
   flex: 1 0 auto;
+  @include defaultTransition;
+
   @media screen and (max-width: 430px) {
     text-align: center;
     .pagination--summary__title,
@@ -221,7 +240,7 @@
 
 .articlesMain__bodyLink {
   display: block;
-  color: tomato;
+  color: $pop;
   line-height: 1.736;
 }
 
@@ -232,7 +251,6 @@
 .articlesMain__heading {
   @extend .scale--4;
   margin-bottom: .2em;
-  color: tomato;
 }
 
 .articlesMain__description {
@@ -241,16 +259,5 @@
   line-height: 1.736;
   & > p {
     margin-bottom: 1em;
-  }
-}
-
-.tags {
-  text-align: center;
-  margin-bottom: 2em;
-}
-
-.tag {
-  &:after {
-    display: ",";
   }
 }
