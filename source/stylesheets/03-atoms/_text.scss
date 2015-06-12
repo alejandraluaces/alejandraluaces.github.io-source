@@ -13,18 +13,6 @@
 // ### Headings
 // --------------------------------------------
 
-%heading {
-
-  a {
-    color: inherit;
-
-    &:hover,
-    &:focus {
-      opacity: 80%;
-    }
-  }
-}
-
 $sizes:
     scale--1 4.768em  $display     $black    map-get($fontWeight, bold)    false
   , scale--2 3.052em  $sansSerif   $black    map-get($fontWeight, light)   false
