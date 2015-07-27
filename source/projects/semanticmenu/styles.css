@@ -1,0 +1,58 @@
+body {
+	font-family: "courier new";
+	text-align: center;
+}
+
+p {
+	font-size: 1em;
+	width: 450px;
+	margin: auto;
+	padding-bottom: 15px;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h3 {
+	font-size: 3em;
+	font-variant: small-caps;
+}
+
+strong {
+	font-weight: bold;
+}
+
+footer {
+	width: 45em;
+	border: 1px #000 solid;
+	padding: 10px;
+	background-color: #D8BFD8;
+	margin: 20px auto
+}
+
+footer p {
+	width: 550px;
+}
+
+#wrapper {
+	width: 48em;
+	margin: auto;
+	padding: 10px 0px 10px 0px;
+}
+
+#menu {
+	width: 45em;
+	border: 1px #000 solid;
+	padding: 10px;
+	background-color: #D8BFD8;
+	margin: auto;
+}

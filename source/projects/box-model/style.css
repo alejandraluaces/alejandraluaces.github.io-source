@@ -1,0 +1,193 @@
+/*Main-------------------------*/
+
+body {
+  color: #444;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.text {
+  width: auto;
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+}
+
+.points {
+  background-image: url('images/points.png');
+  background-repeat: repeat-x;
+  background-position: top center;
+  padding-top: 5em;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  background-image: url('images/background.png');
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 4.75em;
+  line-height: 1.5em;
+  color: #444;
+  position: relative;
+}
+
+h2 {
+  font-family: 'CabinSemiBold', sans-serif;
+  font-size: 2em;
+  color: #444;
+}
+
+h3 {
+  color: #333;
+  font-family: 'CabinItalic', sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+strong {
+  font-family: 'CabinSemiBold';
+  color: #333;
+}
+
+p {
+  font-family: 'CabinRegular', sans-serif;
+  font-size: 1.4em;
+  line-height: 1.25em;
+  color: #444;
+}
+
+pre {
+  background-color: #fcded8;
+  border-radius: 4px;
+}
+
+footer {
+  font-family: 'CabinRegular';
+  background-image: url('background.png');
+  font-size: 120%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+blockquote{
+  border-left: 1em solid #a63b3b;
+  text-align: justify;
+  font-size: .75em;
+  padding-left: 20px;
+  line-height: 1.75em;
+}
+
+.scale {
+  font-size: 70%;
+  background-color: #fcded8;
+  padding: 0 .5em 0 .5em;
+}
+
+/*Links, Images and Fonts---------------*/
+
+.properties {
+  max-width: 33em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CabinRegular';
+    src: url('fonts/Cabin-Regular-webfont.eot');
+    src: url('fonts/Cabin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cabin-Regular-webfont.woff') format('woff'),
+         url('fonts/Cabin-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Cabin-Regular-webfont.svg#CabinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinItalic';
+    src: url('fonts/Cabin-Italic-webfont.eot');
+    src: url('fonts/Cabin-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cabin-Italic-webfont.woff') format('woff'),
+         url('fonts/Cabin-Italic-webfont.ttf') format('truetype'),
+         url('fonts/Cabin-Italic-webfont.svg#CabinItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinSemiBold';
+    src: url('fonts/Cabin-SemiBold-webfont.eot');
+    src: url('fonts/Cabin-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Cabin-SemiBold-webfont.woff') format('woff'),
+         url('fonts/Cabin-SemiBold-webfont.ttf') format('truetype'),
+         url('fonts/Cabin-SemiBold-webfont.svg#CabinSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:link {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #444;} 
+
+a:visited{
+    color: #fff;
+}
+
+/*Box-Object Diagram---------------*/
+
+.margin {
+background-color: #ac877f;
+width: 100%;
+height: 11em;
+padding: 1em 0 0 0;
+}
+
+.padding {
+background-color: #5b999c;
+border: #a63b3b solid 1em;
+width: 80%;
+height: 6em;
+margin: auto;
+padding: 1.8em 0 0 0;
+}
+
+.content-area {
+background-color: #e8e8e8;
+width: 357px;
+height: .75em;
+margin: auto;
+font-family: 'BebasNeueRegular';
+font-size: 5em;
+line-height: .9em;
+}
+
+
+
+

@@ -1,0 +1,156 @@
+
+/*Basic Layout Styles-------------------------*/
+
+body {
+  color: #333;
+}
+
+.main-container {
+  max-width: 24em;
+  min-width: 13em;
+  margin: 3em auto;
+}
+
+header img {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 3.7em;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: -4px;
+  line-height: .75em;
+  margin: 0;
+}
+
+p {
+  font-family: 'Baskerville', 'Goudy Old Style', serif;
+	font-size: .9em;
+  color: #111;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.names {
+  font-family: 'Sintony', sans-serif;
+  font-size: .6em;
+}
+
+.blue {
+  color: #2590e8;
+  font-weight: bold;
+}
+
+.grey {
+  color: #a0a0a0;
+}
+
+.twitter-bar {
+  background-color: #2590e8;
+  padding: .5em 0;
+  font-family: 'Courier', serif;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin: 1em 0;
+  color: #fff;
+}
+
+.icon {
+  display: inline;
+  padding-left: 8px;
+}
+
+.topcolumn-wrapper {
+  width: 100%;
+  border-bottom: 1px dashed #222;
+}
+
+.topcolumn-wrapper p {
+  font-family: 'Sintony', sans-serif;
+  font-size: .6em;
+}
+
+.column {
+  display: inline-block;
+  width: 30%;
+  margin: .5em 0;
+  padding-bottom: 2em;
+}
+
+.column p {
+  font-family: 'Sintony', sans-serif;
+  font-size: .6em;
+  margin-top: .1em;
+}
+
+.rightcolumn {
+  display: inline-block;
+  width: 30%;
+}
+
+.rightcolumn p {
+  font-family: 'Sintony', sans-serif;
+  font-size: .6em;
+  padding-bottom: 1.5em;
+}
+
+.verticalborder {
+  border-right: 1px solid #333;
+  padding-right: .5em;
+}
+
+.twocolumn {
+  width: 63%;
+  display: inline-block;
+  margin: 1em .2em 0 .2em;
+}
+
+footer {
+  width: 93%;
+  border: 1px dashed #333;
+  font-family: 'Sintony', sans-serif;
+  font-size: .6em;
+  padding: .75em 2em .75em .75em
+}
+
+/*Links, Images and Fonts---------------*/
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:link {
+  	color: #222;
+}
+
+a:hover {
+    color: #6e5d84;
+  } 
+
+a:visited {
+    color: #222;
+}
+
+/*MobileStuff-----------*/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    font-size: 115%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 125%;
+  }
+}

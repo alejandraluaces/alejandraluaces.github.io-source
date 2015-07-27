@@ -1,0 +1,49 @@
+body {
+	background-color: #fff7f2;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.maincontainer {
+	width: 100%;
+}
+
+table {
+	background-color: #555;
+	color: #333;
+	font-family: 'Arial', sans-serif;
+	font-size: 1em;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.days {
+	width: 8em;
+}
+
+.time {
+	background-color: #024059;
+	color: #f2f1df;
+}
+
+th, thead {
+	background-color: #bfaa84;
+}
+
+td {
+	background-color: #e0e0e0;
+	text-align: center;
+	padding: .5em;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-weight: 400italic;
+}
+
+/*Shows-----------------*/
+
+.live {
+	background-color: #a5d8d3;
+}

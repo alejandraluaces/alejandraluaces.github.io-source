@@ -1,0 +1,126 @@
+/*Main-------------------------*/
+
+body {
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: #444;
+}
+
+.maincontainer {
+  width: 90%;
+  max-width: 30em;
+  margin: 0em auto;
+  background-image: url('images/bgpattern.png');
+  background-repeat: repeat;
+  background-position: top;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 1px dotted #444;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.2em;
+  color: #444;
+  top: 1em;
+  position: relative;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #444;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: .4em;
+  color: #444;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: .9em;
+  line-height: 1em;
+  color: #444;
+}
+
+footer {
+  font-weight: 400;
+  font-size: 100%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  border-top: 1px dotted #444;
+  text-align: center;
+}
+
+/*Links & Images---------------*/
+
+a:link {
+  color: #ff6666;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #c0c0c0;} 
+
+a:visited{
+    color: #ff6666;
+}
+
+/*Skill Bars-------------------*/
+
+figure {
+  background: #ff9999;
+  height: 1.5em;
+  margin: 0;
+}
+
+.skill {
+  background: #e8e8e8;
+  height: 1.5em;
+  margin-bottom: em;
+  width: 30em;
+}
+
+.htmlcss {
+  width: 40%;
+}
+
+.jquery {
+  width: 5%;
+}
+
+.responsive {
+  width: 10%;
+}
+
+.adobe {
+  width: 80%;
+}
+
+.creativity {
+  width: 80%;
+}
+
+.usability {
+  width: 65%;
+}
+
+.organization {
+  width: 50%;
+}
+
+.goals {
+  width: 60%;
+}
+
+

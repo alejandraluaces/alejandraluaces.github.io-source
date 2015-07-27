@@ -1,0 +1,614 @@
+
+
+/*-------G E N E R A L----------*/
+
+body {
+  color: #333;
+  font-family: 'Noticia Text', serif;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+}
+
+header {
+  height: 10px;
+  background-color: #9cdebc;
+}
+
+h1 {
+  font-size: 5.063em;
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 2.25em;
+}
+
+footer {
+  background-color: #9cdebc;
+  color: #333;
+  padding: 2em;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Istok Web", sans-serif;
+  line-height: 1.25em;
+  margin-bottom: 2em;
+}
+
+footer h1 {
+  line-height: .5em;
+  margin: 0 0 .4em 0;
+}
+
+.curlybrace {
+  font-family: "Baskerville Old Goudy", serif;
+  font-size: 11.391em;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transform: rotate(90deg); 
+  -moz-transform: rotate(90deg); 
+  position: relative;
+  left: .11em;
+  top: -.4em;
+  margin:0;
+}
+
+a:link {
+  color: #a80000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #a80000;
+  text-decoration: none;
+}
+
+/*---------T A N G E N T------------*/
+
+.tangent {
+  margin: auto;
+  text-align: center;
+  padding: 11em 0;
+}
+
+.tangent h1, h2 {
+  margin: 1em 0 0 0;
+}
+
+.tangent h1 {
+  color: #aa0000;
+}
+
+.tangent h2 {
+  margin: .5em 0 2em 0;
+}
+
+.red {
+  background-color: #c98787;
+  -moz-border-radius: 8em;
+  -webkit-border-radius: 8em;
+  border-radius: 8em;
+  height: 8em;  
+  width: 8em;
+  display: inline-block;
+  position: relative;
+  right: 3;
+  margin: 0;
+}
+
+.red:hover {
+  background-color: #aa0000;
+  -moz-transition:background-color    .3s ease-in 0, top .3s ease-in 0;
+  -webkit-transition:background-color .3s ease-in 0, top .3s ease-in 0;
+  transition:background-color         .3s ease-in 0, top .3s ease-in 0;
+}
+
+.black {
+  background-color: #c0c0c0;
+  -moz-border-radius: 5em;
+  -webkit-border-radius: 5em;
+  border-radius: 5em;
+  height: 8em;
+  width: 8em;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  left: -7px;
+}
+
+.black:hover {
+  background-color: #000;
+  -moz-transition:background-color    .3s ease-in 0, top .3s ease-in 0;
+  -webkit-transition:background-color .3s ease-in 0, top .3s ease-in 0;
+  transition:background-color         .3s ease-in 0, top .3s ease-in 0;
+}
+
+/*---------C O M P O U N D / O V E R L A P--------------*/
+
+.compound {
+  background-color: #aa0000;
+  width: 100%;
+  padding: 10em 7em;
+  height: 50em;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.highlight {
+  color: #680000;
+}
+
+.compound h1 {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  text-align: left;
+  padding-bottom: .5em;
+  font-size: 3.375em;
+}
+
+.compound h2 {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #e8e8e8;
+}
+
+.compound-container {
+  max-width: 70em;
+  margin: auto;
+}
+
+.description {
+  width: 80%;
+  margin: auto;
+  max-width: 40em;
+  min-width: 19em;
+  float: right;
+}
+
+.snowman {
+  float: left;
+  position: relative;
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.lilcircle {
+  -webkit-animation: comedown 2s linear 0s infinite alternate;
+  -moz-animation: comedown 2s linear 0s infinite alternate;
+  background-color: #fff;
+  -moz-border-radius: 5em;
+  -webkit-border-radius: 5em;
+  border-radius: 7em;
+  height: 7em;  
+  width: 7em;
+  margin: auto;
+  position: relative;
+  top: 1.9em;
+}
+
+@-webkit-keyframes comedown {
+  0%  { -webkit-transform: translate(0px,0px);   }
+  50% { -webkit-transform: translate(0px,0px);   }
+  100%{ -webkit-transform: translate(0px,-20px); }
+}
+
+@-moz-keyframes comedown {
+  from { -moz-transform: translate(0px,0px);   }
+  to   { -moz-transform: translate(0px,-20px); }  
+}
+
+.medcircle {
+  background-color: #fff;
+  -moz-border-radius: 8em;
+  -webkit-border-radius: 8em;
+  border-radius: 10em;
+  height: 10em;  
+  width: 10em;
+  position: relative;
+  margin: auto;
+  top: 1.2em;
+}
+
+.bigcircle {
+  -webkit-animation: moveup 2s linear 0s infinite alternate;
+  -moz-animation:    moveup 2s linear 0s infinite alternate;
+  background-color: #fff;
+  -moz-border-radius: 11em;
+  -webkit-border-radius: 11em;
+  border-radius: 14em;
+  height: 14em;  
+  width: 14em;
+  margin: auto;
+  position: relative;
+}
+
+@-webkit-keyframes moveup {
+      0%  { -webkit-transform: translate(0px,0px);  }
+      50% { -webkit-transform: translate(0px,0px);  }
+      100%{ -webkit-transform: translate(0px,40px); }
+}
+
+@-moz-keyframes moveup {
+      0%  { -moz-transform: translate(0px,0px);  }
+      50% { -moz-transform: translate(0px,0px);  }
+      100%{ -moz-transform: translate(0px,40px); }
+}
+
+/*--------T R A N S P A R E N C Y-------*/
+
+.transparency {
+  background-color: #fff;
+  text-align: center;
+  height: 60em;
+}
+
+.transparency p {
+  position: relative;
+  width: 8em;
+  top: 3em;
+  left: 5em;
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.5em;
+}
+
+.transparency {
+  height: 40em;
+  padding: 6em 0;
+}
+
+.transparency h2 {
+  text-align: center;
+  margin-bottom: 3em;
+  font-size:1.5em;
+}
+
+.transparency .highlight {
+  color: #57c79e;
+  text-transform: uppercase;
+}
+
+.trans-circle {
+  -webkit-animation: shake 1s linear 0s infinite alternate;
+  -moz-animation:    shake 1s linear 0s infinite alternate;
+
+  background-color: #000;
+  color: #000;
+  -moz-border-radius: 30em;
+  -webkit-border-radius: 30em;
+  border-radius: 30em;
+  height: 30em;  
+  width: 30em;
+  text-align: left;
+  margin: 3em auto;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@-webkit-keyframes shake {
+  0%, 49%        {-webkit-transform: translateX(0);   }
+  50%, 70%, 90%  {-webkit-transform: translateX(-2px);}
+  60%, 80%, 100% {-webkit-transform: translateX(2px); }
+}
+
+@-moz-keyframes shake {
+  0%, 49%        {-moz-transform: translateX(0);   }
+  50%, 70%, 90%  {-moz-transform: translateX(-2px);}
+  60%, 80%, 100% {-moz-transform: translateX(2px); }
+}
+
+.trans-circle:hover {
+  background-color: #e8e8e8;
+  -webkit-animation-play-state: paused; 
+  -webkit-transition:background-color .8s ease-in 0, top .3s ease-in 0;
+
+  -moz-animation-play-state: paused; 
+  -moz-transition:background-color    .8s ease-in 0, top .3s ease-in 0;
+
+  transition:background-color         .8s ease-in 0, top .3s ease-in 0;
+}
+
+/*------------W E I G H T---------------*/
+
+.weight {
+  background-color: #000;
+  width: 100%;
+  height: 58em;
+}
+
+.weight .blurb {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 2em;
+  position: relative;
+  top: 26em;
+  color: #fff;
+  display: block;
+}
+
+.blurb h1 {
+  padding-bottom: .5em;
+  margin-top: 0;
+  font-size: 5.063em;
+}
+
+.blurb p {
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.5em;
+}
+
+.example {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 40em;
+}
+
+.circle {
+  -webkit-animation: suspense 5s 0s infinite alternate;
+  -moz-animation-name:    suspense 5s 0s infinite alternate;
+  animation-name:         suspense 5s 0s infinite alternate;
+  
+  background-color: #fff;
+  position: absolute;
+  display: inline-block;
+  top: 22em;
+}
+
+@-webkit-keyframes suspense {
+       from{ -webkit-transform: translate(0px,0px) scale(.8)    }
+       to  { -webkit-transform: translate(0px,-220px) scale(.2);}
+}
+
+@-moz-keyframes suspense {
+       from{ -moz-transform: translate(0px,0px) scale(.8)    }
+       to  { -moz-transform: translate(0px,-220px) scale(.2);}
+}
+
+.one {
+  left: 1%;
+  height: 10em;
+  width: 10em;  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+}
+
+.two {
+  left: 25%;
+  height: 7em;
+  width: 7em;  
+  -webkit-border-radius: 7em;
+  -moz-border-radius: 7em;
+  border-radius: 7em;
+}
+
+.three {
+  left: 30%;
+  height: 13em;
+  width: 13em;  
+  -webkit-border-radius: 13em;
+  -moz-border-radius: 13em;
+  border-radius: 13em;
+}
+
+.four {
+  left: 50%;
+  height: 11em;
+  width: 11em;  
+  -webkit-border-radius: 11em;
+  -moz-border-radius: 11em;
+  border-radius: 11em;
+}
+
+.five {
+  left: 60%;
+  height: 8em;
+  width: 8em;  
+  -webkit-border-radius: 8em;
+  -moz-border-radius: 8em;
+  border-radius: 8em;
+}
+
+.six {
+  left: 67%;
+  height: 12em;
+  width: 12em;  
+  -webkit-border-radius: 12em;
+  -moz-border-radius: 12em;
+  border-radius: 12em;
+}
+
+.seven {
+  left: 83%;
+  height: 8em;
+  width: 8em;  
+  -webkit-border-radius: 8em;
+  -moz-border-radius: 8em;
+  border-radius: 8em;
+}
+
+.eight {
+  background-color: #9cdebc;
+  left: 98%;
+  height: 5em;
+  width: 5em;  
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  border-radius: 8em;
+}
+
+/*==================M O B I L E
+==========================================================*/
+
+@media screen and (max-width: 480px) {
+
+footer {
+  font-size: 100%;
+  width: 100%;
+  height: auto;
+}
+
+footer h1 {
+  font-size: 200%;
+}
+
+.curlybrace {
+  display: none;
+}
+
+.main-container {
+  width: 100%;
+}
+
+/*---TANGENT-----*/
+.tangent {
+  margin: auto;
+  padding: 3em;
+  width: 100%;
+}
+
+.tangent h1 {
+    font-size: 200%;
+}
+
+/*--OVERLAPPING--*/
+
+.compound {
+  padding: 1em;
+  margin: 0;
+  width: 100%;
+}
+
+.compound h1 {
+  font-size: 250%;
+  text-align: center;
+}
+
+.description {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.description h2 {
+  font-size: 120%;
+  line-height: 1.2em;
+}
+
+.lilcircle {
+  height: 3em;  
+  width: 3em;
+}
+
+.medcircle {
+  height: 5em;  
+  width: 5em;
+}
+
+.bigcircle {
+  height: 7em;  
+  width: 7em;
+}
+
+.snowman {
+  float: none;
+  position: relative;
+  top: 33em;
+  margin-bottom: 0;
+}
+
+/*---TRANSPARENCY--*/
+.transparency {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.transparency p {
+  font-size: 100%;
+  opacity: 1;
+  left: 1.9em;
+  top: 1.4em;
+}
+
+.transparency .highlight {
+  color: #57c79e;
+  text-transform: uppercase;
+}
+
+.trans-circle {
+  -webkit-animation: shake 1s linear 0s infinite alternate;
+  -moz-animation:    shake 1s linear 0s infinite alternate;
+
+  background-color: #e0e0e0;
+  color: #000;
+  opacity: .5;
+  height: 15em;  
+  width: 15em;
+  margin: auto;
+}
+
+.trans-circle:hover{
+  display: none;
+}
+
+/*--WEIGHT-------*/
+
+.weight {
+  width: 100%;
+}
+
+.weight .blurb {
+  width: 100%;
+  font-size: 80%;
+  margin: auto;
+  padding-bottom: 2em;
+  position: relative;
+  top: 26em;
+  color: #fff;
+  display: block;
+}
+
+.example {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  left: -50px;
+}
+
+.circle {
+  -webkit-animation: suspense 5s 0s infinite alternate;
+  -moz-animation-name:    suspense 5s 0s infinite alternate;
+  animation-name:         suspense 5s 0s infinite alternate;
+  
+  background-color: #fff;
+  position: absolute;
+  display: inline-block;
+  top: 22em;
+}
+
+@-webkit-keyframes suspense {
+       from{ -webkit-transform: translate(0px,0px) scale(.4)    }
+       to  { -webkit-transform: translate(0px,-220px) scale(.1);}
+}
+
+@-moz-keyframes suspense {
+       from{ -moz-transform: translate(0px,0px) scale(.4)    }
+       to  { -moz-transform: translate(0px,-220px) scale(.1);}
+}
+}

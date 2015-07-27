@@ -1,0 +1,277 @@
+
+/*Basic Layout Styles-------------------------*/
+.main-container {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-family: 'StMarieThin', sans-serif;
+  color: #f2e0bd;
+  line-height: .9em;
+}
+
+h2 {
+  font-size: 1em;
+  font-family: 'StMarieThin', sans-serif;
+  color: #bfaa8f;
+  line-height: 0;
+  max-width: 20em;
+}
+
+h3 {
+  color: #444;  
+  font-size: 1em;
+  font-family: 'StMarieThin', sans-serif;
+  line-height: 0;
+}
+
+header {
+  position: fixed;
+  background-color: #594c4c;
+  width: 100%;
+  top: -38px;
+  height: 8em;
+  z-index: 5;
+}
+
+header h1{
+  padding-left: 2.2em;
+}
+
+header h2 {
+  padding-left: 4.25em;
+}
+
+.curlybrace {
+  font-family: 'Baskerville', 'Goudy Old Style', serif;
+  font-weight: normal;
+  color: #ff9d00;
+  position: relative;
+  font-size: 5.063em;
+  top: 89px;
+  left: 23px;
+  line-height: 0;
+}
+
+p {
+  font-family: 'AaarghNormal', sans-serif;
+	font-size: 1.25em;
+}
+
+footer {
+	font-size: 1em;
+}
+
+code {
+  display: inline;
+}
+
+/*Examples-----------------------------*/
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5em 0;
+}
+
+.introduction {
+  padding: 5em 0 0 0;
+  background: url('images/cartography.gif');
+  background-repeat: repeat;
+  background-position: center;
+  color: #f2e0bd;
+}
+
+.introduction em {
+  color: #6e5d84;
+}
+
+.introduction h1 {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  line-height: 1em;
+  padding: 0;
+  max-width: 80%;
+}
+
+.introducion p {
+  font-size: 2.25em;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+aside {
+  max-width: 16em;
+  background-color: #594c4c;
+  border-radius: 1em;
+  float: right;
+  padding: 1em;
+  margin: 1em 3em 1em 1em;
+  display: inline;
+  -moz-box-shadow: 1px 1px 3px #333;
+  -webkit-box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #333;
+  color: #f2e0bd;
+}
+
+aside h1 {
+  text-align: center;
+  margin: 0;
+}
+
+aside p {
+  font-size: 1em;
+  display: inline;
+}
+
+.cog {
+  font-size: 2.25em;
+  color: #ff9d00;
+}
+
+.fixed {
+  background-color: #f2e0bd;
+  color: #444;
+}
+
+.fixed h1{
+  color: #594c4c;
+}
+
+.static {
+  background: url('images/flowers.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #f2e0bd;
+}
+
+.absolute {
+  color: #333;
+  background-color: #8c706c ;
+}
+
+.absolute aside h1 {
+  color: #444;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.absolute aside {
+  max-width: 18em;
+  background-color: #f2e0bd;
+  color: #594c4c;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em 3em 1em 1em;
+  display: inline;
+  position: relative;
+  -moz-box-shadow: 1px 1px 3px #333;
+  -webkit-box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #333;
+  z-index: 0;
+}
+
+.plane {
+  font-size: 3.375em;
+  position: absolute;
+  color: #b22c99;
+  top: -.6em;
+  left: 4em;
+}
+
+.relative {
+  color: #f2e0bd;
+  background: url('images/cartography.gif');
+}
+
+.relative aside {
+  background-color: #1d1626;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.beaker4 {
+  position: relative;
+  left: 1em;
+  color: #ff9d00;
+}
+
+/*Links, Images and Fonts---------------*/
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:link {
+  	color: #222;
+}
+
+a:hover {
+    color: #6e5d84;
+  } 
+
+a:visited {
+    color: #222;
+}
+
+@font-face {
+    font-family: 'StMarieThin';
+    src: url('fonts/StMarie-Thin-webfont.eot');
+    src: url('fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/StMarie-Thin-webfont.woff') format('woff'),
+         url('fonts/StMarie-Thin-webfont.ttf') format('truetype'),
+         url('fonts/StMarie-Thin-webfont.svg#StMarieThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AaarghNormal';
+    src: url('fonts/Aaargh-webfont.eot');
+    src: url('fonts/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aaargh-webfont.woff') format('woff'),
+         url('fonts/Aaargh-webfont.ttf') format('truetype'),
+         url('fonts/Aaargh-webfont.svg#AaarghNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*MobileStuff-----------*/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 100%;
+  }
+
+  header {
+    height: 9em;
+  }
+
+  header h1, h2{
+    line-height: 1em;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    font-size: 115%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 125%;
+  }
+}

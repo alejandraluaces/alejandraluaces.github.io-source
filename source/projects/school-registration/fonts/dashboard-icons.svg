@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2012 by original authors @ fontello.com</metadata>
+<defs>
+<font id="dashboard-icons" horiz-adv-x="1000" >
+<font-face font-family="dashboard-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="plus-squared" unicode="&#xe803;" d="M700 750q42 0 71-29t29-71l0-600q0-40-29-70t-71-30l-600 0q-40 0-70 30t-30 70l0 600q0 42 30 71t70 29l600 0z m-50-450l0 100-200 0 0 200-100 0 0-200-200 0 0-100 200 0 0-200 100 0 0 200 200 0z" horiz-adv-x="800" />
+<glyph glyph-name="menu" unicode="&#xe801;" d="M650 400q22 0 36-15t14-35-15-35-35-15l-600 0q-20 0-35 15t-15 35 14 35 36 15l600 0z m-600 100q-20 0-35 15t-15 35 14 35 36 15l600 0q22 0 36-15t14-35-15-35-35-15l-600 0z m600-300q22 0 36-15t14-35-15-35-35-15l-600 0q-20 0-35 15t-15 35 14 35 36 15l600 0z" horiz-adv-x="700" />
+<glyph glyph-name="pencil" unicode="&#xe800;" d="M718 680q32-32 47-64t15-48l0-16-252-252-290-288-238-52 50 240 290 288 252 252q54 12 126-60z m-494-640l24 24q-2 44-52 94-22 22-45 35t-35 13l-14 2-22-24-18-80q28-16 46-34 24-24 36-48z" horiz-adv-x="780" />
+<glyph glyph-name="phone" unicode="&#xe802;" d="M461 290q162 162 118 206l-8 8q-30 30-41 48t-4 54 49 88q20 24 37 39t35 16 30 1 29-13 24-18 26-25 21-22q48-48-6-194t-204-294q-150-150-295-205t-193-7q-2 2-23 22t-25 25-18 24-13 31 2 30 15 35 38 37q42 34 70 47t54 2 35-18 39-37q44-44 208 120z" horiz-adv-x="800" />
+</font>
+</defs>
+</svg>

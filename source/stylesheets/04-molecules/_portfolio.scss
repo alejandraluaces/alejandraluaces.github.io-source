@@ -29,6 +29,7 @@
 
 .portfolioItem__tags {
   @extend .scale--7;
+  margin-bottom: $gutter/2;
 }
 
 .portfolioItem__imageContainer {
@@ -74,4 +75,9 @@
     font-size: 1.75em;
     line-height: 1.25;
   }
+}
+
+.portfolioItem__description {
+  @extend .footerText;
+  text-align: left;
 }

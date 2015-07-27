@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>CSS: The Box-Object Model</title>
+  </head>
+  
+  <body>      
+    <div class="main-container">
+
+        <header>
+          <h1>The Box-Object Model</h1>
+          <img src="images/diagram.png">
+          <h3><strong>Objective</strong>: Explain the CSS Box-Object Model in a concise, easy-to-understand presentation.</h3>
+        </header> 
+        <div class="points"></div>
+
+        <div class='text'>
+          <section>
+            <p>The basic premise of the CSS box-object model is that everything on the web is a <strong>rectangle</strong> or "box". Each element on the web has a content area, padding, a border, and a margin, in that order (from inside, out). 
+          </section>
+
+          <section>
+            <div class='content-area'>Content Area</div>
+          
+            <p>The <strong>content area</strong>, though it doesn't look like it, is self-contained in a rectangle. Text and images appear within the content area. Without padding applied, the content will "kiss" the border.
+          </section>
+
+          <section>
+            <div class='padding'></div>
+
+            <p>The <strong>padding</strong> clears an area around the content. It is affected by the background color and is not transparent. The <strong>border</strong> goes around the content area and padding. You can control the color and width of the border, even applying decorative styles.
+          </section>
+
+          <section>
+            <div class='margin'></div>
+
+            <p>The <strong>margin</strong> clears an area outside of the border, and is always transparent.
+          </section>
+
+          <section>
+            <p>All of the elements together look like this:</p>
+
+              <div class="margin">   
+                <div class="border">    
+                  <div class="padding">    
+                    <div class="content-area">Content Area
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section>
+            <p>In CSS 2.1, if you specified a height and a width for the element, it would only apply to the content area. The margins, padding, and border would be drawn outside of the content area size specified, actually making the element larger. Things inside of the content area would remain unaffected.
+            <blockquote>
+              <h3>width + padding + border = actual visible/rendered width of box</h3>
+              <h3>height + padding + border = actual visible/rendered height of box</h3>
+            </blockquote>
+          </section>
+
+          <section>
+            <p>However, in CSS3, a property has been introduced that has changed the box object model.  The <span class="scale"><code>box-sizing</code></span> property allows all of these things--the margin, border, padding, and content area to be drawn inside of the element, rather than outside, giving you more control over size & positioning.
+            <p>This can be both a good and a bad thing. It's great because of what I just mentioned--having more control over how your box is positioned and relates to other elements on the page.  A downside is that the content within the box is affected.
+          <pre><code>
+  content { 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+          </code></pre>
+
+          <p>And, of course, you would also add your padding, margins and borders, and find that they rest within the specified height and width.
+        </section>
+
+        <section>
+          <p>With <span class="scale">box-sizing</span>, the default setting is <span class="scale">content-box</span>, which preserves the properties of the former CSS 2.1. <span class="scale">border-box</span> gives the new styling precedence, and <span class="scale">inherit</span>, of course, just inherits whatever is going on in the parent element.
+        </section>
+
+        </div>
+        
+    <footer>
+      <h4>This project was made as part of my 8th Light apprenticeship.</h4>
+      <a href="http://alejandraluaces.com">www.alejandraluaces.com</a>
+    </footer>
+  </div>
+
+  </body>
+
+</html>
+

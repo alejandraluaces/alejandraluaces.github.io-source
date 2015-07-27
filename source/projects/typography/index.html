@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='True' name='HandheldFriendly' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" href="css/styles.css"  media="screen">
+    <link rel="stylesheet" href="css/home-embedded.css"  media="screen">
+    <script type="text/javascript" src="javascript/jquery-1.9.1.min.js"></script> 
+    <title>web type</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>web type as an art form</h1>
+          <a href="#kerning" class='scroll'><p>kerning</p></a>
+          <a href="#font-types" class='scroll'><p>font types</p></a>
+          <a href="#anatomy" class='scroll'><p>anatomy</p></a>
+          <a href="#web-font" class='scroll'><p>web fonts</p></a>
+      </header>
+
+      <section id="intro">
+        <p>The possibilities of web type have revolutionized typography as an art form.</p>
+        <p>Typography begun as a means to more quickly and efficiently produce literature, rather than to continue hand-writing it. The first font was <strong>blackletter</strong>.
+        <p>Today, there are thousands of fonts available, and the creation of new fonts is quite accessible.</p>
+      </section>
+
+      <section id="kerning">
+        <h2>kerning</h2>
+        <h2 class="two">kerning</h2>
+        <h2 class="three">kerning</h2>  
+        <p><strong>Kerning</strong> is the process of adjusting the spacing between individual letterforms. </p>
+        <p><strong>Tracking</strong> adjusts space uniformly over a range of characters.</p>    
+      </section>
+
+      <section id="font-types">
+        <p><em>There are three general categories of typeface:</em></p>
+        <h3 class="serif">serif</h3>
+        <p>A <strong>serif</strong> is a stroke added to the beginning and end of a main stroke. Serif are best when applied to horizontal-intensive reading, as they help keep one's eye on the line of text.
+        <h3 class="sans-serif">sans-serif</h3>
+        <p><strong>Sans-serif</strong> fonts, as their name suggests, do not have serifs. Best applied to vertical-intensive scanning.
+        <h3 class="script">script</h3>
+        <p><strong>Script</strong> typefaces are modeled after handwriting or calligraphy, and can be either formal or casual.
+      </section>
+
+      <section id="anatomy">
+        <img src="images/anatomy.png" class="center-image">
+        <ol>
+          <li><strong>serif </strong>» non-structural details at the ends of strokes.</li>
+          <li><strong>x-height </strong>» height of the main body of a lowercase letter. The x-height does not always fall in the "center" of characters, but is based on the height of the x character. For readability, pick fonts with larger x-height, and more prominent ascenders and descenders. The distinct letter- and word-forms make text quicker and easier to read.</li>
+          <li><strong>descender </strong>» downward vertical stroke on lowercase letters that extends below the baseline.</li>
+          <li><strong>terminal </strong>» end of a stroke that lacks a serif. Sometimes decorative.</li>
+          <li><strong>baseline </strong>» the "invisible line" where letters sit. Placement varies based on the font.</li>
+        </ol>
+      </section>
+
+      <section id="web-font">
+        <div class="clouds">
+            <span class="icon-cloud icon"></span><span class="icon-cloud icon"></span><span class="icon-cloud icon"></span><span class="icon-cloud icon"></span>
+          </div>
+        <p>We are no longer restricted to just the ten or so web fonts of times past. Now, we have a myriad of font-faces to choose from because of the emergence of <strong>web fonts</strong>.
+        <p><code>@font-face</code> generators are available through websites like <a href="http://www.fontsquirrel.com">Font Squirrel</a> and <a href="http://www.google.com/fonts/">Google Web Fonts</a>, and are used simply by linking the stylesheets and, in some cases, uploading the fonts to your site directory.</p>
+        <p>Icon fonts are far superior to using images on websites and apps, and are applied the same way as web fonts. They are vector images which are easily scaled, colors changed, and shadows applied.  </p>
+      </section>
+
+      <footer>
+        <div class="btn"><a href="#wrapper" class='scroll footer-btn'>back to top</a></div>
+        <p><em>This informative site was made as part of my <a href="http://www.8thlight.com">8th Light</a> apprenticeship.</em></p>
+      </footer>
+
+      <script type="text/javascript">
+        $(document).ready(function($) {
+          $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 900);
+          });
+        });
+      </script>
+
+    </div>
+  </body>
+
+</html>

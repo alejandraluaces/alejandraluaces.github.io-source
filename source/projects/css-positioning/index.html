@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="fontello-embedded.css" type="text/css">
+    <title>CSS: Positioning Properties</title>
+  </head>
+
+  <body>      
+    <section class="main-container">
+
+      <header>
+        <span class="curlybrace">{</span>
+        <h1>positioning</h1>
+        <h2><em>a study on css positioning properties</em></h2>
+      </header>
+
+      <section class="introduction">
+        <div class="container">
+          <h1>Like anything, some aspects of <em>CSS positioning</em> can be good and they can be bad. They are best used deliberately and in moderation.</h1>
+          <p></p>
+        </div>
+      </section>
+        <aside>
+          <h1>float;</h1><span class="icon-cog cog"></span><p>Floating an element pushes it to the right- or left-most position within the parent container. This is particularly useful for images and for something like this aside, which is set as<code> float: right;</code>.</p>
+        </aside>
+
+      <section class="fixed">
+        <div class="container">
+          <h1>fixed;</h1>
+          <h3>\ ˈfikst \</h3>
+          <p>With fixed positioning, the element is positioned relative to the viewport--not the parent element.  It also "sticks" and doesn't scroll with the document.
+          <p>Cross-browser and cross-device support is iffy, though there may be <a href="http://tagsoup.com/cookbook/css/fixed/">some ways to change that</a>.
+          <p>Similar to absolutely positioned elements, <code>top</code>, <code>bottom</code>, <code>left</code> and <code>right</code> values can be specified.
+          <p>Fixed positioning is good for making navgation, header, or footer elements that you always want to remain in sight. It would be useful for applications whose menu options travel several levels to have a little "home button" always fixed in the upper right- or left-hand corner, making it so users never feel "buried" or trapped".</p>
+          <p>The header on this site is an example of a fixed element. See it in action as you scroll down further.
+        </div>
+      </section>
+
+      <section class="static">
+        <div class="container">
+          <h1>static;</h1>
+          <h2>\ ˈsta-tik \</h2>
+          <p><code>Static</code> is the default <code>position</code> value of an element if no other values are appointed.</p>
+          <p>An easy way to think about how things are placed on a website with no CSS positioning applied is to think of them like building blocks. One little square on top of the other, all in order unless otherwise specified.</p>
+        </div>
+      </section>
+
+      <section class="absolute">
+        <div class="container">
+          <h1>absolute;</h1>
+          <h2>\ ˈab-sə-ˌlüt \</h2>
+          <aside>
+            <span class="icon-paper-plane plane"></span><h1>Absolute + Relative =</h1><span class="icon-cog cog"></span><p>Notice the paper airplane to the top right of this box.  The box itself is <code>position: relative;</code>, and the airplane is set as <code>position: absolute;</code> with <code>top</code> and <code>left</code> values specified. Without any positioning applied, it started at the top left of this box, and with <code>top</code> and </code>left</code> values specified, will move from this point.
+          </aside>
+          <p>Absolutely positioned elements are removed completely from the flow of the document (placing it at the top left if you haven't yet specified other values) and have no effect on the surrounding content. Surrounding elements, in turn, ignore it as well and act as if the element isn't even there, adjusting accordingly to fill the space where it once defaulted.  Rude!</p>
+          <p>Additionally, absolutely positioned elements can overlap other things on your page including pictures and text, because of their removal from normal flow.
+        </div>
+      </section>
+
+      <section class="relative">
+        <div class="container">
+          <aside>
+              <h1>Out of Line</h1>
+              <ul>
+              <li><span class="icon-beaker">
+              <li><span class="icon-beaker">
+              <li><span class="icon-beaker">
+              <li><span class="icon-beaker beaker4">
+              </ul>
+              <p>The last beaker in the series has <code>position: relative;</code> applied to it as well as a value of <code>left: 1em; </code> (and some color) to demonstrate how it has only moved to the right a little bit from where it would normally be in the flow of content.
+            </aside>
+          <h1>relative; </h1>
+          <h2> \ ˈre-lə-tiv \</h2>
+          <p>When an element is given the <code>relative</code> assignment, it will <em>not be</em> removed from the flow of content, but will remain in the same place until other positioning variables are applied.
+          <p>Of course, it doesn't seem powerful and impressive now, but it shines most when used in conjunction with <code>position: absolute;</code>.
+        </div>
+      </section>
+    
+    </section>
+  </body>
+
+</html>
+

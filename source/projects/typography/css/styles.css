@@ -1,0 +1,391 @@
+/*----------------M A I N
+------------------------------------------------*/
+body {
+  color: #333;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+strong {
+  font-family: 'OpenSansBold';
+}
+
+em {
+    font-family: 'OpenSansLightItalic';
+}
+
+h1 {
+  font-size: 3.375em;
+  color: #fff;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  font-family: 'OpenSansLight';
+  letter-spacing: 6px;
+  margin-bottom: 1.5em;
+}
+
+p, li {
+    font-family: 'OpenSansLight';
+    font-size: 1.5em;
+    line-height:1.5em;
+}
+
+/*----------------S E C T I O N S
+------------------------------------------------*/
+
+header {
+  background-image: url('../images/monet.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  padding: 13em 0;
+  text-align: center;
+}
+
+header p {
+  display: inline-block;
+  color: #f0f2eb;
+}
+
+header a {
+  background: none;
+  border: 2px #fff solid;
+  border-radius: 5px;
+  padding: 1.2em 1em 1em 1em;
+  margin: 0 2em;
+  width: 20%;
+  display: inline;
+}
+
+.footer-btn {
+  background: none;
+  border: 2px #fff solid;
+  border-radius: 5px;
+  padding: 1.2em 1em 1em 1em;
+  margin: 0 2em;
+  width: 20%;
+  display: inline;
+}
+
+header a:hover, footer a:hover {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#intro {
+  color: #333;
+  padding: 13em;
+}
+
+#intro p {
+  text-align: left;
+  padding-bottom: 1em;
+  width: 60%;
+}
+
+/*K E R N I N G*/
+
+#kerning {
+  background-color: #f0f2eb;
+  color: #60615e;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  padding: 13em;
+}
+
+#kerning p {
+  padding-top: 1em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 5.065em;
+  line-height: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+.two {
+  letter-spacing: 30px;
+  color: #adadad;
+}
+
+.three {
+  letter-spacing: 50px;
+  color: #e0e0e0;
+}
+
+/*F O N T T Y P E S*/
+
+#font-types {
+  background-color: #f4fad2;
+  color: #626454;
+  padding: 15em;
+}
+
+h3 {
+  line-height: .8em;
+  margin-bottom: .2em;
+  background-color: #fdffee;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+
+#font-types p {
+  margin-top: 0;
+  width: 90%;
+}
+
+.serif {
+  font-family: 'BrawlerRegular', serif;
+  font-size: 2.25em;
+  padding: .5em;
+}
+
+.sans-serif {
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: 2.25em;
+  padding: .5em;
+}
+
+.script {
+  font-family: 'LearningCurveProRegular', cursive;
+  font-size: 3.375em;
+  line-height: .8em;
+  padding: .25em;
+  margin: .5em 0 .1em 0;
+}
+
+/*A N A T O M Y*/
+
+#anatomy {
+  background-color: #e1edb9;
+  color: #5a5f4a;
+  padding: 13em 0;
+  text-align: center;
+}
+
+.center-image {
+  margin-bottom: 2.25em;
+}
+
+ol {
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+}
+
+li {
+  margin-bottom: .5em;
+  max-width: 40em;
+}
+
+/*W E B F O N T S*/
+
+#web-font {
+  background-color: #d4ee5e;
+  color: #555f26;
+  padding: 10em 0;
+}
+
+#web-font p {
+  margin: 1em auto;
+  max-width: 26em;
+  padding: 1em 0;
+}
+
+.clouds {
+  width: 20em;
+  margin: auto;
+}
+
+.icon {
+  display: inline;
+  width: 3em;
+  font-size: 3.375em;
+}
+
+footer {
+  background-color: #ff4242;
+  color: #661a1a;
+  font-size: 70%;
+  padding: 5em 0;
+  text-align: center;
+}
+
+footer .btn {
+  font-size: 150%;
+  display: inline;
+  width: 8em;
+  padding: .75em;
+  font-family: 'OpenSansLight', sans-serif;
+}
+
+footer p {
+  margin-top: 3em;
+}
+
+/*----------------LINKS
+------------------------------------------------*/
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+} 
+
+a:visited{
+  color: #fff;
+}
+
+/*----------------FONTS
+------------------------------------------------*/
+
+@font-face {
+    font-family: 'BrawlerRegular';
+    src: url('../fonts/Brawler-webfont.eot');
+    src: url('../fonts/Brawler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Brawler-webfont.woff') format('woff'),
+         url('../fonts/Brawler-webfont.ttf') format('truetype'),
+         url('../fonts/Brawler-webfont.svg#BrawlerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LearningCurveProRegular';
+    src: url('../fonts/LearningCurve_OT-webfont.eot');
+    src: url('../fonts/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LearningCurve_OT-webfont.woff') format('woff'),
+         url('../fonts/LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('../fonts/LearningCurve_OT-webfont.svg#LearningCurveProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansLightItalic';
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot');
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Responsive----------------*/
+
+@media screen and (max-width: 1000px) {
+
+header {
+  padding: 4em 0;
+}
+
+.btn {
+  display: inline;
+  font-size: 50%;
+  width: 8em;
+  margin: .5em auto;
+  padding: .75em;
+}
+
+h1 {
+  font-size: 120%;
+}
+
+#intro {
+  padding: 3em;
+}
+
+#intro p {
+  width: 90%;
+  font-size: 100%;
+}
+
+#kerning {
+  padding: 2.25em;
+}
+
+#kerning p {
+  margin-top: 2.25em;
+  font-size: 120%;
+}
+
+h2 {
+  font-size: 180%;
+  line-height: 2.25em;
+}
+
+.two {
+  letter-spacing: 10px;
+  color: #adadad;
+}
+
+.three {
+  letter-spacing: 20px;
+  color: #e0e0e0;
+}
+
+#font-types {
+  background-color: #f4fad2;
+  color: #626454;
+  padding: 4em 2em 4em 4em;
+  font-size: 70%;
+}
+
+#font-types p {
+  width: 100%;
+}
+
+#anatomy {
+  background-color: #e1edb9;
+  color: #5a5f4a;
+  padding: 5em 0;
+  font-size: 70%;
+}
+
+.center-image {
+    max-width: 30em;
+}
+
+#web-font {
+  background-color: #d4ee5e;
+  color: #555f26;
+  padding: 3em 2em;
+  font-size: 70%;
+}
+
+footer {
+  font-size: 70%;
+}
+
+}

@@ -1,0 +1,234 @@
+
+/*-------G E N E R A L----------*/
+
+body {
+  margin: 0;
+  text-align: center;
+  background-image: url('../images/background.png');
+}
+
+.main-container {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #a80000;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:visited {
+  color: #a80000;
+}
+
+/*---------C L O C K------------*/
+
+.clock {
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+
+.clock-controls {
+  width: 37em;
+  padding-top: 7em;
+  float: right;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  margin-right: 5em;
+}
+
+.hand {
+  position: absolute;
+  right: 20.75em;
+}
+
+.images {
+  display: block;
+  width: 9em;
+  margin: 5.063em auto 1.5em auto;
+}
+
+.left {
+  width: 40%;
+  float: left;
+  padding-left: 2em;
+}
+
+.right {
+  width: 40%;
+  float: right;
+  padding-right: 2em;
+}
+
+#hour {
+  top: 12em;
+  -webkit-transform-origin: 50% 93%;
+  -moz-transform-origin: 50% 91%;
+  transform-origin: 50% 91%;
+}
+
+#minute {
+  top: 7.2em;
+  right: 21.05em;
+  -webkit-transform-origin: 50% 95%;
+  -moz-transform-origin: 50% 94%;
+  transform-origin: 50% 94%;
+}
+
+#second {
+  top: 5.2em;
+  right: 21.5em;
+  z-index: 500;
+  -webkit-transform-origin: 50% 84%;
+  -moz-transform-origin: 50% 84%;
+  transform-origin: 50% 84%;
+}
+
+#start {
+  background-color: #bacf66;
+  color: #4a5329;
+  padding: .1em 0;
+  width: 100%;
+}
+
+.start-active {
+  box-shadow: inset 2px 2px 4px #4a5329;
+}
+
+#start:hover{
+  background-color: #d7e585;
+}
+
+#stop {
+  background-color: #e65540;
+  color: #5c221a;
+  padding: .1em 0;
+  width: 100%;
+}
+
+.stop-active {
+  box-shadow: inset 2px 2px 4px #5c221a;
+}
+
+#stop:hover{
+  background-color: #ff7364;
+}
+
+.btn {
+  padding: .1em 0em .2em 0em;
+  width: 60%;
+  font-weight: bold;
+  margin: auto;
+  font-size: 3.375em;
+  display: block;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: hand;
+}
+
+.add {
+  background-color: #bacf66;
+  color: #4a5329;
+}
+
+.add:hover {
+  background-color: #d7e585;
+}
+
+.add:active{
+  box-shadow: inset 2px 2px 4px #4a5329;
+}
+
+.minus {
+  background-color: #e65540;
+  color: #5c221a;
+}
+
+.minus:hover {
+  background-color: #ff7364;
+}
+
+.minus:active{
+  box-shadow: inset 2px 2px 4px #5c221a;
+}
+
+
+/*==================M O B I L E
+==========================================================*/
+
+@media screen and (max-width: 480px) {
+
+  .clock {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  img {
+    max-width: 80%;
+  }
+
+  .main-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .btn {
+    font-size: 2em;
+  }
+
+  .images {
+    margin-top: 2em;
+  }
+
+  .clock-controls {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    padding-top: .5em;
+  }
+
+  .left, .right {
+    width: 9em;
+    padding: 0;
+  }
+
+  #second {
+    top: 1.4em;
+    right: 8.87em;
+    z-index: 500;
+    height: 7em;
+    -webkit-transform-origin:50% 84%;
+    moz-transform-origin:50% 84%;
+    transform-origin:50% 84%;
+  }
+
+  #minute {
+    top: 3.5em;
+    right: 8.87em;
+    height: 4.5em;
+    z-index: 300;
+    -webkit-transform-origin:50% 86%;
+    moz-transform-origin:50% 86%;
+    transform-origin:50% 86%;
+  }
+
+  #hour {
+    top: 5em;
+    right: 8.76em;
+    height: 3em;
+    -webkit-transform-origin:50% 80%;
+    moz-transform-origin:50% 80%;
+    transform-origin:50% 80%;
+  }
+}

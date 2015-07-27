@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='True' name='HandheldFriendly' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" href="css/styles.css"  media="screen">
+    <link rel="stylesheet" href="css/dashboard.css"  media="screen">    
+    <link rel="stylesheet" href="css/dashboard-icons-embedded.css"  media="screen">
+      <link rel="stylesheet" href="css/orbit-1.2.3.css">
+      <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery.orbit-1.2.3.min.js"></script> 
+    <title>Dashboard</title>
+
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#featured').orbit();
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="school-img">
+       <h1 class="animated fadeInLeft">It's never too late</h1><br>
+       <h1 class="animated fadeInLeft">to register your child.</h1>
+       <img src="images/logo.png" class="logo">
+      </div>
+      <div class="stripe"></div>
+
+
+      <div id="featured">
+        <div class="content">
+          <div id="parent">
+            <a href=""><span class="icon-circle icon-pencil darker"></span></a>
+            <div class="parent-img">
+              <img src="images/parent.png">
+            </div>
+            <div class="parent-info">
+              <h2>Jane Doe</h2>
+              <h3><em>Primary Parent</em></h3>
+              <h4>Date of Birth: 7/1/1976</h4>
+              <h4>Primary Phone: 1 (813) 565-9386</h4>
+              <h4>E-mail Address: jdoe@gmail.com</h4>
+              <h4>Physical Address: 1234 Cedar Lane.</h4>
+            </div>
+          </div>
+        </div>
+        <img src="images/p.png" style="width:1300px; height:23em"/>
+      </div>
+
+    </div>
+
+      <section id="kid-columns">
+
+        <section class="col left">
+          <img src="images/child2.png">
+          <section class="col-info">
+            <h5>Jane Doe</h5>
+            <h5>Female</h5>
+            <h5>7 years old</h5>
+            <h5>Allergic to penicillin</h5>
+            <h5>Lives with both parents</h5>
+          </section>   
+          <section class="icon">
+            <a href=""><span class="icon-circle icon-pencil"></span></a>
+            <a href=""><span class="icon-circle icon-menu"></span></a>
+            <a href=""><span class="icon-circle icon-phone"></span></a>
+          </section>
+        </section>
+
+        <section class="col center">
+          <img src="images/child1.png">
+          <section class="col-info">
+            <h5>James Doe</h5>
+            <h5>Male</h5>
+            <h5>4 years old</h5>
+            <h5>No allergies</h5>
+            <h5>Lives with both parents</h5>
+          </section>  
+          <section class="icon">
+            <a href=""><span class="icon-circle icon-pencil"></span></a>
+            <a href=""><span class="icon-circle icon-menu"></span></a>
+            <a href=""><span class="icon-circle icon-phone"></span></a>
+          </section>    
+        </section>
+
+        <section class="col right">
+          <img src="images/emptyimg.png">
+          <section class="col-info">
+            <a href=""><span class="icon-plus-squared"></span></a>
+            <a href=""><h5>Add a child</h5></a>
+          </section>  
+        </section>
+
+      </section>
+
+      <div class="stripe"></div>
+      
+      <footer>
+       <section class="col-one">
+        <h1>Visit Us.</h1>
+       </section>
+       <section class="col-two">
+        <h3>555 Fictional Road</h3>
+        <h3>Tampa, Florida</h3>
+        <h3>33609</h3>
+        <h3>1-813-555-5555</h3>
+       </section>
+      </footer>
+
+
+    </div>
+  </body>
+
+</html>

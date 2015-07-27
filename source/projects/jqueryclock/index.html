@@ -1,0 +1,131 @@
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content='True' name='HandheldFriendly' />
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+		<link rel="stylesheet" href="css/home-embedded.css" type="text/css">				
+		<script type="text/javascript" src="javascript/jquery-1.9.1.min.js"></script>	
+		<title>jQuery Analog Clock</title>
+	</head>
+
+	<body>
+		<div class="main-container">
+
+			<header>
+			</header>
+
+				<div class="clock">
+					<img src="images/clock.png" class="clock-face">
+					<img src="images/secondhand.png" class="hand" id="second">
+					<img src="images/minutehand.png" class="hand" id="minute">
+					<img src="images/hourhand.png"   class="hand" id="hour">
+				</div>
+
+				<section class="clock-controls">
+						<span id="start" class="btn"><span class="icon-play"></span></span>
+						<span id="stop" class="btn"><span class="icon-stop"></span></span>		
+									
+					<section class="left">
+						<img src="images/hours.png" class="images">
+						<span class="btn add hour">+</span>
+						<span class="btn minus hour">-</span>
+					</section>
+
+					<section class="right">
+						<img src="images/minutes.png" class="images">
+						<span class="btn add minute">+</span>
+						<span class="btn minus minute">-</span>
+					</section>
+				</section>
+
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				var hourHand = $('#hour');
+				var hourRotation = 0;
+
+				var minuteHand = $('#minute');
+				var minuteRotation = 0;
+
+				var secondHand = $('#second');
+				var secondRotation = 0;
+
+				var degreesPerSecond = 6;
+				var degreesPerMinute = 6;
+				var degreesPerHour   = 30;
+
+				var hourInterval;
+				var minuteInterval;
+				var secondInterval;
+
+				$('.minute.add').click(function() { 
+					moveMinuteHand();
+				});
+
+				$('.minute.minus').click(function() { 
+					minuteRotation -= degreesPerMinute * 2;
+					moveMinuteHand();
+				});
+
+				$('.hour.add').click(function() { 
+					moveHourHand();
+				});
+
+				$('.hour.minus').click(function() { 
+					hourRotation -= degreesPerHour * 2;
+					moveHourHand();
+				});
+
+				function moveHourHand() {
+					hourRotation += degreesPerHour;
+					hourHand.css("webkit-transform", "rotateZ(" + hourRotation + "deg)");
+				}
+
+				function moveMinuteHand() {
+					minuteRotation += degreesPerMinute;
+					minuteHand.css("webkit-transform", "rotateZ(" + minuteRotation + "deg)");
+				}
+
+				function moveSecondHand() {
+					secondRotation += degreesPerSecond;
+					secondHand.css("webkit-transform", "rotateZ(" + secondRotation + "deg)");
+				}
+
+				function startClock () {
+					if(hourInterval === undefined) {
+						hourInterval   = setInterval(moveHourHand,  3600000);
+						minuteInterval = setInterval(moveMinuteHand, 60000);
+						secondInterval = setInterval(moveSecondHand, 1000);
+					}
+				}
+
+				function stopClock () {
+					clearInterval(hourInterval);
+					clearInterval(minuteInterval);
+					clearInterval(secondInterval);
+					hourInterval = undefined;
+				}
+
+				$('#start').click(function() { 
+					startClock();
+					$(this).addClass("start-active");
+					$('#stop').removeClass("stop-active");
+				});
+
+				$('#stop').click(function() { 
+					stopClock();
+					$(this).addClass("stop-active");
+					$('#start').removeClass("start-active");					
+				});
+			});
+
+		</script>
+
+	</body>
+</html>

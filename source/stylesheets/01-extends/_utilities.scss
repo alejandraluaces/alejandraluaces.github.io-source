@@ -4,9 +4,6 @@
 
 html, body {
   height: 100%;
-  font-family: $sansSerif;
-  font-size: map-get($html, fontSize);
-  font-weight: map-get($html, fontWeight)
 }
 
 // --------------------------------------------

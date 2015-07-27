@@ -1,0 +1,97 @@
+<h1 id="jquery-uihttpjqueryuicom---interactions-and-widgets-for-the-web"><a href="http://jqueryui.com/">jQuery UI</a> - Interactions and Widgets for the web</h1>
+
+<p>jQuery UI provides interactions like Drag and Drop and widgets like Autocomplete, Tabs and Slider and makes these as easy to use as jQuery itself.</p>
+
+<p>If you want to use jQuery UI, go to <a href="http://jqueryui.com">jqueryui.com</a> to get started. Or visit the <a href="http://forum.jquery.com/using-jquery-ui">Using jQuery UI Forum</a> for discussions and questions.</p>
+
+<p>If you are interested in helping develop jQuery UI, you are in the right place.
+To discuss development with team members and the community, visit the <a href="http://forum.jquery.com/developing-jquery-ui">Developing jQuery UI Forum</a> or in #jquery on irc.freednode.net.</p>
+
+<h2 id="for-contributors">For contributors</h2>
+
+<p>If you want to help and provide a patch for a bugfix or new feature, please take
+a few minutes and look at <a href="http://wiki.jqueryui.com/w/page/35263114/Getting-Involved">our Getting Involved guide</a>.
+In particular check out the <a href="http://wiki.jqueryui.com/w/page/12137737/Coding-standards">Coding standards</a>
+and <a href="http://wiki.jqueryui.com/w/page/25941597/Commit-Message-Style-Guide">Commit Message Style Guide</a>.</p>
+
+<p>In general, fork the project, create a branch for a specific change and send a
+pull request for that branch. Don't mix unrelated changes. You can use the commit
+message as the description for the pull request.</p>
+
+<h2 id="running-the-unit-tests">Running the Unit Tests</h2>
+
+<p>Run the unit tests with a local server that supports PHP. No database is required. Pre-configured php local servers are available for Windows and Mac. Here are some options:</p>
+
+<ul>
+  <li>Windows: <a href="http://www.wampserver.com/en/">WAMP download</a></li>
+  <li>Mac: <a href="http://www.mamp.info/en/index.html">MAMP download</a></li>
+  <li>Linux: <a href="https://www.linux.com/learn/tutorials/288158-easy-lamp-server-installation">Setting up LAMP</a></li>
+  <li><a href="http://code.google.com/p/mongoose/">Mongoose (most platforms)</a></li>
+</ul>
+
+<h2 id="building-jquery-ui">Building jQuery UI</h2>
+
+<p>jQuery UI uses the <a href="http://github.com/cowboy/grunt">grunt</a> build system. Building jQuery UI requires node.js and a command line zip program.</p>
+
+<p>Install grunt.</p>
+
+<p><code>npm install grunt -g</code></p>
+
+<p>Clone the jQuery UI git repo.</p>
+
+<p><code>git clone git://github.com/jquery/jquery-ui.git</code></p>
+
+<p><code>cd jquery-ui</code></p>
+
+<p>Install node modules.</p>
+
+<p><code>npm install</code></p>
+
+<p>Run grunt.</p>
+
+<p><code>grunt build</code></p>
+
+<p>There are many other tasks that can be run through grunt. For a list of all tasks:</p>
+
+<p><code>grunt --help</code></p>
+
+<h2 id="for-committers">For committers</h2>
+
+<p>When looking at pull requests, first check for <a href="http://wiki.jqueryui.com/w/page/12137724/Bug-Fixing-Guide">proper commit messages</a>.</p>
+
+<p>Do not merge pull requests directly through GitHub's interface.
+Most pull requests are a single commit; cherry-picking will avoid creating a merge commit.
+It's also common for contributors to make minor fixes in an additional one or two commits.
+These should be squashed before landing in master.</p>
+
+<p><strong>Make sure the author has a valid name and email address associated with the commit.</strong></p>
+
+<p>Fetch the remote first:</p>
+
+<pre><code>git fetch [their-fork.git] [their-branch]
+</code></pre>
+
+<p>Then cherry-pick the commit(s):</p>
+
+<pre><code>git cherry-pick [sha-of-commit]
+</code></pre>
+
+<p>If you need to edit the commit message:</p>
+
+<pre><code>git cherry-pick -e [sha-of-commit]
+</code></pre>
+
+<p>If you need to edit the changes:</p>
+
+<pre><code>git cherry-pick -n [sha-of-commit]
+# make changes
+git commit --author="[author-name-and-email]"
+</code></pre>
+
+<p>If it should go to the stable brach, cherry-pick it to stable:</p>
+
+<pre><code>git checkout 1-8-stable
+git cherry-pick -x [sha-of-commit-from-master]
+</code></pre>
+
+<p><em>NOTE: Do not cherry-pick into 1-8-stable until you have pushed the commit from master upstream.</em></p>

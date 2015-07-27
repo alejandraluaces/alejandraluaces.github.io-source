@@ -25,7 +25,6 @@
 }
 
 .hideonmobile {
-
   @media screen and (max-width: 430px) {
     display: none;
   }
@@ -48,6 +47,7 @@
   padding: $gutter*2 $gutter;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 
   a {
     margin-bottom: $gutter;
@@ -60,11 +60,6 @@
   line-height: 1.5;
   text-transform: none;
   font-weight: 200;
-  text-align: center;
   max-width: 700px;
   margin: 0 auto 1em auto;
-
-  a {
-    font-weight: 600;
-  }
 }

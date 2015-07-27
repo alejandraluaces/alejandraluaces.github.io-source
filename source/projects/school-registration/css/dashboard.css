@@ -1,0 +1,148 @@
+
+/**********B A S I C     A S S E T S*******/
+li {
+	list-style-type: none;
+}
+
+h2 {
+	font-size: 1.424em;
+	text-align: left;
+	margin: 0;
+	font-family: 'OpenSansBold';
+}
+
+h3 {
+	font-size: 1em;
+	font-family: 'OpenSansLightItalic';
+	margin-top: 0;
+	color: #333;
+}
+
+h4 {
+	margin: 0;
+}
+
+h5 {
+	font-size: 1.125em;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.col-two h3 {
+	color: #fff;
+}
+
+.col-one, .col-two {
+	display: inline;
+}
+
+/**********I C O N S & such*********/
+
+.icon-circle {
+	width: 50px;
+	height: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, .5);
+	-webkit-transition:background-color .3s ease-in-out; 
+	-moz-transition:background-color .3s ease-in-out; 
+	transition:background-color .3s ease-in-out; 
+}
+
+.icon-plus-squared:hover {
+	opacity: .6;
+}
+
+.icon-circle:hover {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.icon {
+	font-size: 2em;
+	display: block;
+	margin: 1em 0;
+}
+
+.darker {
+	background-color: rgb(48, 0, 48);
+	background-color: rgba(48, 0, 48, .5);
+	position: absolute;
+	font-size: 2.25em;
+	left: 90%;
+}
+
+.darker:hover {
+	background-color: rgb(48, 0, 48);
+	background-color: rgba(48, 0, 48, .2);
+}
+
+/*******P A R E N T container**********/
+
+#parent {
+	background-color:#fdfbe4;
+	color:#333;
+	padding: 2.027em 5.202em 5.202em 5.202em;
+}
+
+.parent-img {
+	display: inline-block;
+}
+
+.parent-info {
+	text-align: left;
+	font-size: 1.602em;
+	display: inline-block;
+	margin-left: 5.202em;
+	vertical-align: top;
+}
+/*******C H I L D container**********/
+
+#kid-columns {
+	width: 100%;
+	height: 572px;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.col {
+	width: 33.33%;
+	margin: 0;
+	float: left;
+	clear: right;
+	color: #fff;
+	padding: 4.11em 1.125em;
+	display: inline-block;
+	text-align: center;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.left {
+	background-color: #867b90;
+
+}
+
+.center {
+	background-color: #968ca9;
+}
+
+.right {
+	background-color: #6f5b82;
+	height: 572px;
+}
+
+.right h5 {
+	margin: 0;
+}
+
+.col-info {
+	text-align: center;
+	margin-top: 2em;
+}

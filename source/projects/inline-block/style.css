@@ -1,0 +1,248 @@
+/*Main-------------------------*/
+
+body {
+  color: #444;
+  background-color: #998773;
+  font-family: 'AmbleLight', sans-serif;
+}
+
+img {
+  width:100%;
+}
+
+.main-container {
+  width: 74%;
+  max-width: 73em;
+  background-color: #d3c5b8;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+strong {
+  font-family: 'AmbleBold', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+em {
+    font-family: "AmbleItalic", sans-serif;
+}
+
+.intro {
+  background-color: #bfaf5e;
+}
+
+.intro p {
+  color: #333;
+}
+
+h1 {
+  font-family: "AmbleItalic", sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  color: #444;
+}
+
+h2 {
+  font-family: 'AmbleItalic', sans-serif;
+  font-size: 1.25em;
+  line-height: 1em;
+  color: #444;
+}
+
+p {
+  font-size: 125%;
+  line-height: 1.3em;
+  color: #444;
+}
+
+code {
+ font-size: 90%;
+ background-color: #b2ccba;
+}
+
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+blockquote{
+  border-left: 10px solid #d3a297;
+  text-align: justify;
+  font-size: .75em;
+  padding-left: 20px;
+  line-height: 1.75em;
+  margin: 4em 0em 4em 5em;
+}
+
+/*Inline-Block Content------------------*/
+
+figure {
+  margin-top: 2em;
+}
+section {
+  width: 80%;
+  max-width: 60em;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  border-radius: 6px;
+  text-align: justify;
+  padding: .1em 1em .1em 1em;
+  -moz-box-shadow: inset 0 3px 0 #888;
+  -webkit-box-shadow: inset 0 3px 0 #888;
+  box-shadow: inner 0 3px 0 #888;
+}
+
+.caption {
+  font-size: 100%;
+  display: block;
+  margin-top: 1em;
+}
+
+.inline-elements {
+  background-color: #8fa898;
+}
+
+.block-elements {
+  background-color: #8fa898;
+}
+
+.inline-block {
+  background-color: #8fa898;
+}
+
+.example1 {
+background-color: #c5603f;
+color: #ffb9a6;
+text-align: center;
+width: 2em;
+display: inline;
+margin: 0 1em 0 0;
+padding: .3em;
+font-size: 150%;
+}
+
+.example2 {
+background-color: #687a6e;
+color: #8fa898;
+text-align: center;
+display: block;
+font-size: 150%;
+margin: auto;
+padding: .3em 0 .2em 0;
+}
+
+.example3 {
+background-color: #c5603f;
+color: #ffb9a6;
+text-align: center;
+display: block;
+font-size: 150%;
+margin: auto;
+padding: .3em 0 .3em 0;
+}
+
+.example4 {
+background-color: #684e4a;
+color: #ffddd7;
+text-align: center;
+display: block;
+font-size: 150%;
+margin: auto;
+padding: .3em 0 .3em 0;
+}
+
+.example5 {
+background-color: #c5603f;
+color: #ffb9a6;
+text-align: center;
+display: inline-block;
+font-size: 150%;
+padding: .3em 0 .3em 0;
+width: 20%;
+height: 4em;
+}
+
+.example6 {
+background-color: #687a6e;
+color: #8fa898;
+text-align: center;
+display: inline-block;
+font-size: 150%;
+padding: .3em 0 .3em 0;
+width: 80%;
+height: 2em;
+}
+
+/*Links, Images and Fonts---------------*/
+
+@font-face {
+    font-family: 'SailRegular';
+    src: url('fonts/Sail-Regular-webfont.eot');
+    src: url('fonts/Sail-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Sail-Regular-webfont.woff') format('woff'),
+         url('fonts/Sail-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Sail-Regular-webfont.svg#SailRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AmbleLight';
+    src: url('fonts/Amble-Light-webfont.eot');
+    src: url('fonts/Amble-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Light-webfont.woff') format('woff'),
+         url('fonts/Amble-Light-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Light-webfont.svg#AmbleLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AmbleItalic';
+    src: url('fonts/Amble-Italic-webfont.eot');
+    src: url('fonts/Amble-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Italic-webfont.woff') format('woff'),
+         url('fonts/Amble-Italic-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Italic-webfont.svg#AmbleItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AmbleBold';
+    src: url('fonts/Amble-Bold-webfont.eot');
+    src: url('fonts/Amble-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Bold-webfont.woff') format('woff'),
+         url('fonts/Amble-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Bold-webfont.svg#AmbleBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:link {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #444;} 
+
+a:visited{
+    color: #fff;
+}

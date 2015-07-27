@@ -1,0 +1,14 @@
+.incomplete-notice {
+    border: 1px solid #C02942;
+    color: #C02942;
+    width: 50%;
+    text-align: center;
+    margin: 2em auto;
+    height: 2.5em;
+    padding-top: 1.3em;
+    padding-left: 6.25em;
+}
+
+.incomplete {
+   border: 3px solid #C02942 !important;	
+}

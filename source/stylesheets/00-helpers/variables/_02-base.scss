@@ -2,14 +2,11 @@
 // ### General
 // --------------------------------------------
 
-$html: (
-  fontSize: 20px,
-);
-
 $body: (
   color: $black,
   fontFamily: $sansSerif,
   fontWeight: 300,
+  fontSize: 20px,
   bg: $white
 );
 

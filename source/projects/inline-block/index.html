@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>CSS: Inline and Block Elements</title>
+  </head>
+  
+  <body>      
+    <div class="main-container">
+
+      <header>
+        <img src="/projects/inline-block/images/titleimg.png">
+      </header>
+
+      <section class="intro">
+        <p>Every HTML element can be displayed in one of three different ways: <strong>block</strong>, <strong>inline</strong>, or <strong>inline-block</strong>. These properties affect how content interacts with other content surrounding it. This is a summary of the default styles.  Of course, these styles can be applied to any element and the default overridden.
+      </section>
+
+      <section class="inline-elements">
+        <h1>Display: Inline;</h1>
+        <p>Inline objects are things that <em>follow the flow of text</em> without breaking it. That is to say that it will only take up as much width as needed.
+        <p>Tags that have this as their default style include  <code>a</code>, <code>li</code>, <code>span</code>, <code>img</code>, and styling tags like <code>strong</code> and <code>em</code>.
+
+          <figure>
+            <div class="example1">li</div><div class="example1">li</div><div class="example1">li</div><div class="example1">li</div>
+            <p>The default display style for <code>li</code> tags is <code>inline</code>. They will only take up as much space as they need and will display next to one another.
+          </figure>
+        <p>You'll notice the code elements of this presentation have different styles applied to them. The <code>code</code> tag is another example of an inline element.
+      </section>
+
+      <section class="block-elements">
+        <h1>Display: Block;</h1>
+        <p>Block elements both start and <em>force new lines</em>. Block elements do not tolerate anything beside them, and the outer edges of these elements will touch the edges of the parent containers.
+        <p>The default <code>display: block ;</code> value is set for <code>p</code> tags, and <code>h1</code>-<code>h6</code> tags.
+        <figure>
+          <div class="example2">This is a paragraph.</div>
+          <div class="example3">This is another paragraph.</div>
+          <p><code>p</code> tags are an example of something that has a default style of "block". Every <code>p</code> tag will force a new line unless styled to be <code>inline</code> or <code>inline-block</code>.
+        </figure>
+        <p><code>div</code> tags also force new lines. All of the figures in this presentation are made using div tags, and the default styles have been overridden to demonstrate different display properties.
+      </section>
+
+      <section class="inline-block">
+        <h1>Display: Inline-Block;</h1>
+        <p>Setting <code>inline-block</code> allows the element to stay inline while preserving the ability to control width, height, margin and padding parameters of different elements, which could all be on the same line.
+          <figure>
+            <div class="example4">Header</div>
+            <div class="example5">Paragraph</div><div class="example6">Paragraph</div>
+        <p>This example shows a default <code>display: block;</code> header element (let's just say <code>h1</code>). Beneath it are two <code>display: inline-block;</code> paragraphs set to widths totaling 100% so that they butt up against the edges of the parent container. The parent container has a little bit of padding applied to it as well.  They're also set to different heights to demonstrate.
+        <p><code>inline-block</code> is pretty cool in that it can negate having to use <code>float</code> for positioning, which can be hard to manipulate and predict.
+          </figure>
+      </section>
+
+
+      <footer>
+        <p>This project was made as part of my 8th Light apprenticeship.
+        <p><a href="http://alejandraluaces.com">www.alejandraluaces.com</a>
+      </footer>
+      
+    </div>
+  </body>
+</html>
