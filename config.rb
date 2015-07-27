@@ -8,6 +8,13 @@ set :css_dir, 'stylesheets'
 set :images_dir, 'images'
 set :partials_dir, 'partials'
 
+page "/feed.xml", layout: false
+page "/calendar.haml", layout: false
+
+page "*", layout: "layout"
+page "writing/source/*", layout: "post_layout"
+page "work/index.html", layout: "portfolio_layout"
+
 ########################################################################
 # Blog
 ########################################################################
@@ -17,18 +24,11 @@ activate :blog do |blog|
   blog.prefix = "writing"
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
-  blog.sources = "source/:title.html"
-  blog.permalink = "source/{title}.html"
+  blog.sources = "writing/:title.html"
+  blog.permalink = "writing/{title}.html"
   blog.tag_template = "tag.html"
 
 end
-
-page "/feed.xml", layout: false
-page "/calendar.haml", layout: false
-
-page "*", layout: "layout"
-page "writing/source/*", layout: "post_layout"
-page "work/index.html", layout: "portfolio_layout"
 
 ########################################################################
 # Output
@@ -50,6 +50,10 @@ activate :autoprefixer do |config|
   end
 
 configure :build do
+
+  activate :minify_css
+
+  activate :minify_javascript
 
 end
 
