@@ -12,7 +12,7 @@ page "/feed.xml", layout: false
 page "/calendar.haml", layout: false
 
 page "*", layout: "layout"
-page "source/*", layout: "post_layout"
+page "writing/source/*", layout: "post_layout"
 page "work/index.html", layout: "portfolio_layout"
 
 ########################################################################
@@ -21,11 +21,11 @@ page "work/index.html", layout: "portfolio_layout"
 
 activate :blog do |blog|
 
-  blog.prefix = "writing"
+  blog.prefix = "/writing"
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
-  blog.sources = "writing/:title.html"
-  blog.permalink = "writing/{title}.html"
+  blog.sources = "source/:title.html"
+  blog.permalink = "{title}.html"
   blog.tag_template = "tag.html"
 
 end
