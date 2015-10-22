@@ -1,0 +1,32 @@
+// --------------------------------------------
+// ### Items
+// --------------------------------------------
+
+.inlineNav {
+  display: block;
+}
+
+
+.inlineNav__list {
+  padding-top: 1px;
+}
+
+.inlineNav__item {
+  @extend .scale--6;
+  display: inline;
+  margin-right: 2em;
+
+  &:hover,
+  &:visited,
+  &:active {
+    color: map-get($inlineNav__link, hover);
+  }
+}
+
+.inlineNav__link {
+  color: inherit;
+}
+
+.inlineNav__link--active {
+  font-weight: map-get($fontWeight, bold);
+}
