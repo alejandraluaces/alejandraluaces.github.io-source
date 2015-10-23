@@ -3,15 +3,21 @@
 // --------------------------------------------
 
 .masthead {
+  @extend %flexboxGrid;
   text-align: center;
+  background: transparent;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .masthead__logo {
+  @extend %flexboxGrid__cell;
   display: block;
-  width: 250px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   background: url('/images/icons/alejandra.svg');
-  background-size: 250px 100px;
+  background-size: 150px 50px;
   margin: 0 auto;
 }
 
@@ -19,28 +25,7 @@
 // ### Footer
 // --------------------------------------------
 
-.footerMain {
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid $gray--light;
-  flex-shrink: 0;
+.footer {
   align: center;
-  padding: $gutter*2 $gutter;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-
-  a {
-    margin-bottom: $gutter;
-  }
-}
-
-.footerText {
-  font-size: .8em;
-  color: $gray--dark;
-  line-height: 1.5;
-  text-transform: none;
-  font-weight: 200;
-  max-width: 700px;
-  margin: 0 auto 1em auto;
+  padding: $gutter*2 0;
 }

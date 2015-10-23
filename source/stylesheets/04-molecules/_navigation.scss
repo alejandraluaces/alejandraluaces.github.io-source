@@ -3,9 +3,8 @@
 // --------------------------------------------
 
 .inlineNav {
-  display: block;
+  margin-bottom: $gutter/2;
 }
-
 
 .inlineNav__list {
   padding-top: 1px;
@@ -24,9 +23,15 @@
 }
 
 .inlineNav__link {
-  color: inherit;
+  font-weight: map-get($fontWeight, bold);
+
+  &:hover,
+  &:visited,
+  &:active {
+    @extend %gradient;
+  }
 }
 
 .inlineNav__link--active {
-  font-weight: map-get($fontWeight, bold);
+  @extend %gradient;
 }
