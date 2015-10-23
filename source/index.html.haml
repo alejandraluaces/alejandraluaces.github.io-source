@@ -1,7 +1,12 @@
----
-layout: layout
-title: Alejandra Luaces
-description: Product Designer in Chi-Town
----
-
-%h2.intro I am cross-disciplinary designer passionately working toward finding ways to help design and development teams work better together.
+%section
+  .portfolioMain
+    - data.portfolio_items.each do |portfolio_item|
+      %a{:href => "#{portfolio_item["link"]}", class: "portfolioItem__link"}
+        %figure.portfolioItem
+          .portfolioItem__imageContainer
+            %img{:src => "../images/#{portfolio_item["image"]}", class: "portfolioItem__image"}
+            %figcaption.portfolioItem__caption= portfolio_item["action"]
+          %hr.portfolioItem__break
+          %dt.portfolioItem__name= portfolio_item["title"]
+          .portfolioItem__tags= portfolio_item["tags"]
+          %dd.portfolioItem__description= portfolio_item["description"]
