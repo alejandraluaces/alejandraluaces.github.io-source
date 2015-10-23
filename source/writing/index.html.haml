@@ -1,7 +1,7 @@
 .articlesMain
 
   - blog.articles.each do |article|
-    %dl.articlesMain__item
+    %dl
       %a{:href =>article.url, class: "articlesMain__link"}
         %header.articlesMain__header
           %dt.articlesMain__heading= article.title

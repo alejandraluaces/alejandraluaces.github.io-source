@@ -2,39 +2,15 @@
 // ### Individual Flexbox properties
 // --------------------------------------------
 
-%flex--display {
-  display: flex;
-}
-
-%flex--direction__column {
-  flex-direction: column;
-}
-
-%flex--direction__row {
-  flex-direction: row;
-}
-
-%flex--justifyContent__spaceBetween {
-  justify-content: space-between;
-}
-
-%flex--justifyContent__center {
-  justify-content: center;
-}
-
-%flex--alignItems__center {
-  align-items: center;
-}
-
 // --------------------------------------------
 // ### Flexbox grid
 // --------------------------------------------
 
 %flexboxGrid {
-  @extend %flex--display;
+  display: flex;
 }
 
 %flexboxGrid__cell {
-  @extend %flex--display;
+  display: flex;
   flex: 1;
 }

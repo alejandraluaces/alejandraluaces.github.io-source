@@ -8,40 +8,43 @@
   flex-direction: column;
 }
 
-%flexboxLayout--nav {
-  @extend %flex--display;
-  @extend %flex--justifyContent__spaceBetween;
-  align: center;
-}
-
-%flexboxLayout--pagination {
-  @extend %flex--display;
-  flex-direction: column;
-
-  @media screen and (min-width: 576px) {
-    flex-direction: row;
-  }
-}
-
 // --------------------------------------------
 // ### General
 // --------------------------------------------
 
-.bodyLayout {
+.l--body {
   @extend %flexboxLayout--page;
-  padding: 0 $gutter;
   width: 100%;
-  max-width: 63.29em;
-  margin: 0 auto;
-
-  @media screen and (min-width: 576px) {
-    width: 80%;
-  }
 }
 
-.contentMain {
+.l--masthead {
+  flex-shrink: 0;
+  padding: $gutter*2 0;
+  flex-direction: column;
+}
+
+.l--main {
+  flex: 1 0 auto;
+  margin: $gutter*2 auto;
+}
+
+.l--footer {
   display: flex;
   flex: 1 0 auto;
-  flex-direction: column;
-  margin: 2em 0;
+  justify-content: center;
+}
+
+.l--contain {
+  width: 100%;
+  padding: 0 1em;
+  max-width: 685px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 500px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 800px) {
+    width: 60%;
+  }
 }
