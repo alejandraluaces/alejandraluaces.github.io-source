@@ -1,16 +1,17 @@
 %html
   %head
     = partial("partials/head")
-  %body.bodyLayout
+  %body.l--body
 
-    %header.headerMain
-      = partial("partials/header")
+    %header.l--masthead.masthead.l--contain
+      = partial("partials/masthead")
 
-    %section.contentMain
+    %section.l--main.l--contain
       #main{:role => "main"}
         = yield
 
-    %footer.footerMain
-      = partial("partials/footer")
+    %footer.footer
+      .l--contain
+        = partial("partials/footer")
   %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", :type => "text/javascript"}
   %script(src="javascripts/links.js")
