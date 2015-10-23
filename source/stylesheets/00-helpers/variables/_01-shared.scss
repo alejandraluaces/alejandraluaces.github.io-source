@@ -13,12 +13,14 @@ $pop: #FF6347;
 // ### Fonts
 // --------------------------------------------
 
-$sansSerif: "Lato", Helvetica, sans-serif;
-$display: "Playfair Display", serif;
+$sansSerif: "Roboto", Helvetica, sans-serif;
+$condensed: "Roboto Condensed", Helvetica, sans-serif;
+$serif: "Playfair Display", Georgia, times, serif;
 
 $fontWeight: (
+  normal: 400,
   bold: 700,
-  light: 300
+  light: 300,
 );
 
 // --------------------------------------------
