@@ -2,13 +2,8 @@
 // ### Main Navigation
 // --------------------------------------------
 
-$navHeader: (
-  fontSize: .889em,
-);
-
-$navHeader__link: (
-  color: $gray--dark,
-  hover: $pop,
+$inlineNav__link: (
+  hover: $pink,
 );
 
 // --------------------------------------------
@@ -16,7 +11,7 @@ $navHeader__link: (
 // --------------------------------------------
 
 $navFooter: (
-  color: $gray--light,
+  color: $gray--50,
 );
 
 // --------------------------------------------

@@ -1,15 +1,5 @@
 a {
   text-decoration: none;
   color: inherit;
-
-  &:hover,
-  &:active,
-  &:focus {
-    @include defaultTransition;
-    color: $pop;
-  }
-}
-
-.currentPage {
-  font-weight: map-get($fontWeight, bold);
+  outline: none;
 }

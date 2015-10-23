@@ -1,26 +1,16 @@
-
-
-  // - Extends
-  // - Scaled Heading Classes
-  // - Headings
-  // - Paragraphs
-  // - Blockquotes
-  // - Dates
-  // - Status
-  // - Tags
-
 // --------------------------------------------
 // ### Headings
 // --------------------------------------------
 
 $sizes:
-    scale--1 4.768em  $display     $black    map-get($fontWeight, bold)    false
-  , scale--2 3.052em  $sansSerif   $black    map-get($fontWeight, light)   false
-  , scale--3 1.758em  $display     $black    map-get($fontWeight, light)   false
-  , scale--4 1.758em  $sansSerif   $black    map-get($fontWeight, bold)    false
-  , scale--5 1.25em   $sansSerif   $black    map-get($fontWeight, light)   false
-  , scale--6 .9em     $display     $black    map-get($fontWeight, light)   false
-  , scale--7 .64em    $sansSerif   #ccc     map-get($fontWeight, bold)    true;
+    scale--1 4.236em  $condensed    $black    map-get($fontWeight, light)    true
+  , scale--2 2.618em  $sansSerif   $black    map-get($fontWeight, normal)   false
+  , scale--3 1.318em  $serif     $black    map-get($fontWeight, normal)   false
+  , scale--4 1.318em  $sansSerif   $black    map-get($fontWeight, bold)    false
+  , scale--5 1em   $sansSerif   $black    map-get($fontWeight, normal)   false
+  , scale--6 .8em    $condensed     $black    map-get($fontWeight, normal)   true
+  , scale--7 .8em    $sansSerif   $gray--50     map-get($fontWeight, normal)    true
+  , scale--8 .8em    $serif   $black     map-get($fontWeight, normal)    false;
 
 @each $scale in $sizes {
   .#{nth($scale, 1)} {
@@ -35,12 +25,11 @@ $sizes:
   }
 }
 
-.scale--7 {
-  letter-spacing: 1px;
+// --------------------------------------------
+// ### Not Headings
+// --------------------------------------------
+
+blockquote {
 }
 
-p {
-  a {
-    font-weight: 600;
-  }
-}
+

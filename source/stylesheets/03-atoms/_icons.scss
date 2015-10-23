@@ -2,11 +2,11 @@
   display: inline-block;
   margin-right: 1em;
   padding-bottom: $gutter;
-  fill: $gray;
+  fill: $gray--50;
   display: block;
 
   a:hover & {
-    fill: $pop;
+    fill: $pink;
     transition: .2s all ease-in-out;
   }
 }
