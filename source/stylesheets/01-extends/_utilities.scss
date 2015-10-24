@@ -13,19 +13,21 @@ html, body {
 .float--left {
   float: none;
   margin: 1em 0;
-  width: 100%;
 
   @media screen and (min-width: 800px) {
-    width: 60%;
     margin: 0 1em 0 -25%;
     float: left;
   }
 }
 
 .float--right {
-  float: right;
-  margin-left: 1em;
-  margin-right: -25%;
+  float: none;
+  margin: 1em 0;
+
+  @media screen and (min-width: 800px) {
+    margin: 0 -25% 0 1em;
+    float: right;
+  }
 }
 
 .l--fullBleed {
