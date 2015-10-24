@@ -18,7 +18,7 @@ body {
   font-weight: map-get($body, fontWeight);
   font-size: map-get($body, fontSize);
   color: map-get($body, color);
-  line-height: 1.8;
+  line-height: 1.618;
 }
 
 // --------------------------------------------

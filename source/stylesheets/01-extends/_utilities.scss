@@ -12,22 +12,28 @@ html, body {
 
 .float--left {
   float: none;
-  margin: 1em 0;
 
   @media screen and (min-width: 800px) {
-    margin: 0 1em 0 -25%;
+    margin-right: 5%;
     float: left;
   }
 }
 
 .float--right {
   float: none;
-  margin: 1em 0;
 
   @media screen and (min-width: 800px) {
-    margin: 0 -25% 0 1em;
+    margin-left: 5%;
     float: right;
   }
+}
+
+.hang--left {
+  margin-left: -20%;
+}
+
+.hang--right {
+  margin-right: -20%;
 }
 
 .l--fullBleed {
