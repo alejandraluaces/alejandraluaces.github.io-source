@@ -36,6 +36,7 @@
     background-size: 100% 2px;
     background-repeat: no-repeat;
     background-position-y: bottom;
+
     &:hover,
     &:focus,
     &:active {
@@ -64,6 +65,7 @@
 .featureText {
   @extend .scale--3;
   @extend %gradient;
+  @extend %backgroundClip--text;
   min-width: 300px;
   font-style: italic;
   font-weight: map-get($fontWeight, bold);

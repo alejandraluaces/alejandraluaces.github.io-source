@@ -1,5 +1,11 @@
 a {
   text-decoration: none;
-  color: inherit;
+  color: $black;
   outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: lighten ($black, 40%);
+  }
 }

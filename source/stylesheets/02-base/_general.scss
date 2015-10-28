@@ -40,6 +40,9 @@ body {
 %gradient {
   color: $pink;
   background: -webkit-linear-gradient($plum -10%,$pink 75%);
+}
+
+%backgroundClip--text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

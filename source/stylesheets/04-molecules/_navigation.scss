@@ -12,18 +12,14 @@
 
 .inlineNav__item {
   @extend .scale--6;
-  display: inline;
   margin-right: 2em;
+  color: inherit;
 
   &:hover,
-  &:visited,
-  &:active {
-    color: map-get($inlineNav__link, hover);
+  &:active,
+  &:focus {
+    color: lighten($black, 40%)
   }
-}
-
-.inlineNav__link {
-  font-weight: map-get($fontWeight, bold);
 }
 
 // --------------------------------------------
@@ -49,11 +45,6 @@
   @extend .pagination__item;
 }
 
-  &:hover,
-  &:visited,
-  &:active {
-    @extend %gradient;
-  }
 .pagination__item--prev {
   float: left;
   text-align: left;
@@ -61,6 +52,9 @@
 
 .inlineNav__link--active {
   @extend %gradient;
+  @extend %backgroundClip--text;
+}
+
 .pagination__item--next {
   float: right;
   text-align: right;

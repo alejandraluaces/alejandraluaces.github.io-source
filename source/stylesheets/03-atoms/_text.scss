@@ -9,7 +9,7 @@ $sizes:
   , scale--4 1.318em  $sansSerif   $black    map-get($fontWeight, bold)    false
   , scale--5 1em   $sansSerif   $black    map-get($fontWeight, normal)   false
   , scale--6 .8em    $condensed     $black    map-get($fontWeight, normal)   true
-  , scale--7 .8em    $sansSerif   $gray--50     map-get($fontWeight, normal)    true
+  , scale--7 .8em    $sansSerif   $gray--50     map-get($fontWeight, normal)    false
   , scale--8 .8em    $serif   $black     map-get($fontWeight, normal)    false;
 
 @each $scale in $sizes {
@@ -23,13 +23,6 @@ $sizes:
       text-transform: uppercase;
     }
   }
-}
-
-// --------------------------------------------
-// ### Not Headings
-// --------------------------------------------
-
-blockquote {
 }
 
 

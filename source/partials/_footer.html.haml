@@ -1,5 +1,4 @@
 = link_to "http://github.com/alejandraluaces" do
-  = partial "/images/icons/octocat.svg"
+  %img{:src => "../images/icons/octocat.svg", class: "footer__icon"}
 
-%p.footerText This website is in a state of constant improvement, like all things on the web should be.
-%p.footerText I used #{link_to 'Middleman', 'https://middlemanapp.com/'} on #{link_to 'Github Pages', 'https://pages.github.com/'}, #{link_to 'HAML', 'http://haml.info/'} and #{link_to 'SASS', 'http://sass-lang.com/'}, #{link_to 'BEM', 'https://css-tricks.com/bem-101/'} naming conventions, and organized my files and thoughts according to #{link_to 'atomic design', 'http://bradfrost.com/blog/post/atomic-web-design/'} patterns. I used the #{link_to 'Google web fonts', 'https://www.google.com/fonts'} Lato and Playfair, not because they're free, but because I like them. Feel free to #{link_to 'check it out', 'https://github.com/alejandraluaces/alejandraluaces.github.io-source'}.
+%p.footer__colophon This site uses #{link_to 'Middleman', 'https://middlemanapp.com/'} on #{link_to 'Github Pages', 'https://pages.github.com/'}. Check out the #{link_to 'source files', 'https://github.com/alejandraluaces/alejandraluaces.github.io-source'}.

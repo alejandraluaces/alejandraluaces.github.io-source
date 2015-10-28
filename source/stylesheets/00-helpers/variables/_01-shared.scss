@@ -3,6 +3,7 @@
 // --------------------------------------------
 
 $white: hsla(0, 0%, 98%, 1);
+$white--true: hsla(0, 0%, 100%, 1);
 $gray--25: hsla(0, 0%, 20%, .25);
 $gray--50: hsla(0, 0%, 20%, .5);
 $gray--75: hsla(0, 0%, 20%, .75);
@@ -28,8 +29,8 @@ $fontWeight: (
 // ### Transitions
 // --------------------------------------------
 
-@mixin defaultTransition {
-  transition: all .2s ease-in-out;
+%defaultTransition {
+  transition: all .4s ease-in-out;
 }
 
 // --------------------------------------------

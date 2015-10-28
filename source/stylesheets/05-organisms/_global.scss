@@ -27,6 +27,15 @@
 // --------------------------------------------
 
 .footer {
-  align: center;
-  padding: $gutter*2 0;
+  text-align: center;
+  background: $white;
+  padding: $gutter 0;
+}
+
+.footer__colophon {
+  @extend .scale--7;
+}
+
+.footer__icon {
+  margin-bottom: $gutter;
 }

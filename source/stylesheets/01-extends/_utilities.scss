@@ -12,6 +12,7 @@ html, body {
 
 .float--left {
   float: none;
+  margin: 0;
 
   @media screen and (min-width: 800px) {
     margin-right: 5%;
@@ -21,6 +22,7 @@ html, body {
 
 .float--right {
   float: none;
+  margin: 0;
 
   @media screen and (min-width: 800px) {
     margin-left: 5%;
@@ -29,11 +31,19 @@ html, body {
 }
 
 .hang--left {
-  margin-left: -20%;
+  margin-left: 0;
+
+  @media screen and (min-width: 800px) {
+    margin-left: -20%;
+  }
 }
 
 .hang--right {
-  margin-right: -20%;
+  margin-right: 0;
+
+  @media screen and (min-width: 800px) {
+    margin-right: -20%;
+  }
 }
 
 .l--fullBleed {

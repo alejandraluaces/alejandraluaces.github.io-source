@@ -7,7 +7,7 @@ $body: (
   fontFamily: $sansSerif,
   fontWeight: map-get($fontWeight, normal),
   fontSize: 20px,
-  bg: $white
+  bg: $white--true
 );
 
 $selection: (
