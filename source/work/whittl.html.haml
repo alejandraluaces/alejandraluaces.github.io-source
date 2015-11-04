@@ -1,0 +1,6 @@
+.portfolioItem__imageContainer
+  %img{:src => "../images/work/#{portfolio_item["image"]}", class: "portfolioItem__image"}
+  %figcaption.portfolioItem__caption= portfolio_item["action"]
+%dt.portfolioItem__name= portfolio_item["title"]
+.portfolioItem__tags= portfolio_item["tags"]
+%dd.portfolioItem__description= portfolio_item["description"]
