@@ -12,14 +12,17 @@
 
 .inlineNav__item {
   @extend .scale--6;
-  margin-right: 2em;
+  margin-right: 1em;
   color: inherit;
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: lighten($black, 40%)
+  &:last-of-type {
+    margin: 0;
   }
+}
+
+.inlineNav__link--active {
+  @extend %gradient;
+  @extend %backgroundClip--text;
 }
 
 // --------------------------------------------
@@ -48,11 +51,6 @@
 .pagination__item--prev {
   float: left;
   text-align: left;
-}
-
-.inlineNav__link--active {
-  @extend %gradient;
-  @extend %backgroundClip--text;
 }
 
 .pagination__item--next {

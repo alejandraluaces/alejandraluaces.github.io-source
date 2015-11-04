@@ -59,7 +59,7 @@ end
 
 helpers do
   def navbar_link_to(title, url)
-    classes = ["inlineNav__link"]
+    classes = ["inlineNav__item"]
     classes << "inlineNav__link--active" if current_page.url == url
     link_to title, url, class: classes.join(' ')
   end
