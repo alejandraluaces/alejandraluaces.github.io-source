@@ -78,10 +78,3 @@
     opacity: .4;
   }
 }
-
-.portfolioItem__break {
-  width: 2.17em;
-  margin: $gutter 0 $gutter/2 0;
-  border: none;
-  border-bottom: map-get($borderWidth, thin) solid $gray--25;
-}
