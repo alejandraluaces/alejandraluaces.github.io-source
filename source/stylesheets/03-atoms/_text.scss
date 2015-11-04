@@ -8,7 +8,7 @@ $sizes:
   , scale--3 1.318em  $serif     $black    map-get($fontWeight, normal)   false
   , scale--4 1.318em  $sansSerif   $black    map-get($fontWeight, bold)    false
   , scale--5 1em   $sansSerif   $black    map-get($fontWeight, normal)   false
-  , scale--6 .8em    $condensed     $black    map-get($fontWeight, normal)   true
+  , scale--6 .9em    $condensed     $black    map-get($fontWeight, normal)   true
   , scale--7 .8em    $sansSerif   $gray--50     map-get($fontWeight, normal)    false
   , scale--8 .8em    $serif   $black     map-get($fontWeight, normal)    false;
 
@@ -25,4 +25,10 @@ $sizes:
   }
 }
 
+// --------------------------------------------
+// ### Non-headings
+// --------------------------------------------
 
+p {
+  margin-bottom: 1em;
+}

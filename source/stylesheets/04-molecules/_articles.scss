@@ -13,6 +13,8 @@
 
 .article__body {
 
+  max-width: 700px;
+
   @extend %group;
 
   & > h3 {
@@ -21,11 +23,17 @@
   }
 
   p {
-    margin-bottom: $gutter;
 
     &:first-of-type {
       @extend .scale--3;
       font-style: italic;
+    }
+
+    &:last-of-type {
+
+      &:after {
+        content: '\01F64C';
+      }
     }
   }
 
@@ -40,6 +48,7 @@
     &:hover,
     &:focus,
     &:active {
+      color: inherit;
       background: radial-gradient(to bottom,$pink 30%, $plum 100%);
       background-size: 100% 2px;
       background-repeat: no-repeat;
@@ -49,7 +58,7 @@
 }
 
 .article__header {
-  margin: $gutter*4 0 $gutter 0;
+  margin-bottom: $gutter;
 }
 
 .article__title {
@@ -105,7 +114,6 @@
 .date__item,
 .tags__item {
   @extend .scale--6;
-  font-weight: map-get($fontWeight, bold);
 }
 
 .tags__item {
@@ -133,9 +141,28 @@
 }
 
 // --------------------------------------------
-// ### Article Previews
+// ### Article Summaries
 // --------------------------------------------
 
-.articlesMain__link {
-  display: block;
+.articlePreview {
+  margin-bottom: 2.618em;
+}
+
+.article__title--preview {
+  @extend .article__title;
+  font-size: 2em;
+
+  a & {
+
+    &:hover,
+    &:active,
+    &:focus {
+      @extend %gradient;
+      @extend %backgroundClip--text;
+    }
+  }
+}
+
+.article__header--preview {
+  margin-bottom: $gutter/2;
 }

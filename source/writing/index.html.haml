@@ -1,9 +1,14 @@
 .articlesMain
 
   - blog.articles.each do |article|
-    %dl
-      %a{:href =>article.url, class: "articlesMain__link"}
-        %header.articlesMain__header
-          %dt.articlesMain__heading= article.title
-          %time.date= article.date.strftime("%B %e, %Y")
-        %p.articlesMain__description= article.metadata[:page]["description"]
+    %dl.articlePreview
+
+      %header.article__header--preview
+        %a{:href =>article.url, class: "articlesMain__link"}
+          %dt.article__title--preview= article.title
+
+        .article__meta
+          %dt.date__title written
+          %time.date__item= article.date.strftime("%B %e, %Y")
+
+      %p.articlesMain__description= article.metadata[:page]["description"]
