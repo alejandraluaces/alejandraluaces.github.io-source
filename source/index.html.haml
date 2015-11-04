@@ -1,12 +1,15 @@
-%section
-  .portfolioMain
-    - data.portfolio_items.each do |portfolio_item|
+%section.intro__body
+  %p Design is holistic–from inception to execution.
+  %p I'm a Chicago-based product designer working toward finding ways to help teams work better together. I most enjoy empowering and educating clients, promoting the use of pattern libraries to ensure easily-maintainable living design systems, and advocating for end-users.
+
+%section.portfolioMain
+  - data.portfolio_items.each do |portfolio_item|
+    %figure.portfolioItem
       %a{:href => "#{portfolio_item["link"]}", class: "portfolioItem__link"}
-        %figure.portfolioItem
-          .portfolioItem__imageContainer
-            %img{:src => "../images/#{portfolio_item["image"]}", class: "portfolioItem__image"}
-            %figcaption.portfolioItem__caption= portfolio_item["action"]
-          %hr.portfolioItem__break
-          %dt.portfolioItem__name= portfolio_item["title"]
-          .portfolioItem__tags= portfolio_item["tags"]
-          %dd.portfolioItem__description= portfolio_item["description"]
+        .portfolioItem__imageContainer
+          %img{:src => "../images/work/#{portfolio_item["image"]}", class: "portfolioItem__image"}
+          %figcaption.portfolioItem__caption= portfolio_item["action"]
+        %hr.portfolioItem__break
+        %dt.portfolioItem__name= portfolio_item["title"]
+        .portfolioItem__tags= portfolio_item["tags"]
+        %dd.portfolioItem__description= portfolio_item["description"]

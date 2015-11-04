@@ -1,25 +1,69 @@
-.mediaObject {
+.intro__body {
+  margin-bottom: 3em;
 
+  p {
+
+    &:first-of-type {
+      @extend .scale--3;
+      font-style: italic;
+    }
+  }
 }
 
-.mediaObject__image {
+.portfolioMain {
+  @extend %flexboxGrid;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolioItem {
+
+  width: 100%;
+  margin-bottom: 2em;
+
+  @media screen and (min-width: 800px) {
+    width: calc(50% - 1em);
+
+    &:nth-child(odd) {
+      margin-right: 1em;
+    }
+
+    &:nth-child(even) {
+      margin-left: 1em;
+    }
+  }
+}
+
+.portfolioItem__link {
+  @extend %flexboxGrid__cell;
+  flex-direction: column;
+  align-items: flex-start;
+
+  img {
+    width: 100%;
+  }
+}
+
+.portfolioItem__name {
+  @extend .scale--4;
+}
+
+.portfolioItem__tags {
+  @extend .scale--7;
+}
+
+.portfolioItem__imageContainer {
   position: relative;
 }
 
-.mediaObject__link {
-
-}
-
-.mediaObject__tags {
-
-}
-
-.mediaObject__screen {
-  @extend %flexboxGrid;
-  @extend .scale--4;
-  @extend %gradient;
-  @extend %backgroundClip--text;
-  font-size: 1.2em;
+.portfolioItem__caption {
+  @extend .scale--6;
+  text-shadow: 2px 2px 0 black;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: $white;
   top: 0;
   left: 0;
@@ -31,46 +75,13 @@
   z-index: 1;
 
   &:hover {
-    opacity: 1;
+    opacity: .4;
   }
-}
-
-.portfolioItem__link {
-  @extend %flexboxGrid__cell;
-  align-items: flex-start;
-  padding-bottom: 3em;
-  flex: 0 0 100%;
-  max-width: 14em;
-
-  img {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 700px) {
-    flex: 0 0 30%;
-  }
-}
-
-.portfolioItem__name {
-  @extend .scale--4;
-}
-
-.portfolioItem__tags {
-  @extend .scale--7;
-  margin-bottom: $gutter/2;
-}
-
-.portfolioItem__imageContainer {
-  position: relative;
 }
 
 .portfolioItem__break {
   width: 2.17em;
   margin: $gutter 0 $gutter/2 0;
   border: none;
-  border-bottom: map-get($borderWidth, thin) solid $gray--50;
-}
-
-.portfolioItem__description {
-  @extend .scale--7;
+  border-bottom: map-get($borderWidth, thin) solid $gray--25;
 }

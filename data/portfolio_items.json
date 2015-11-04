@@ -1,32 +1,64 @@
 [
 
   {
+    "title": "Whittl",
+    "tags": "UX, design, development, content strategy, illustration",
+    "image": "whittl.gif",
+    "link": "/whittl.html",
+    "action": "Read More"
+  },
+
+  {
+    "title": "International Housewares Association",
+    "tags": "UX, design, development, content strategy",
+    "image": "iha.png",
+    "link": "/charipick.html",
+    "action": "Read More"
+  },
+
+  {
+    "title": "Inspired Home: an IHA brand",
+    "tags": "design, content strategy",
+    "image": "inspired.png",
+    "link": "/charipick.html",
+    "action": "Read More"
+  },
+
+  {
+    "title": "Charipick",
+    "tags": "UX, design, content strategy",
+    "image": "charipick.gif",
+    "link": "/charipick.html",
+    "action": "Go to site"
+  },
+
+  {
     "title": "Gesture",
     "tags": "UX, design",
-    "image": "gesture.jpg",
+    "image": "gesture.png",
     "link": "http://gesture.com/",
-    "action": "See more"
+    "action": "Go to site"
   },
 
   {
     "title": "Women on Call",
     "tags": "UX, design, development",
-    "image": "woc.jpg",
+    "image": "woc.png",
     "link": "http://womenoncall.org/",
     "action": "See more"
   },
 
   {
     "title": "Field Museum",
-    "image": "field.jpg",
+    "image": "field.png",
     "tags": "development",
     "link": "http://fieldmuseum.org/",
-    "action": "See more"
+    "action": "Go to site"
   },
 
   {
     "title": "Chidry",
-    "image": "chidry.jpg",
+    "image": "chidry.png",
     "tags": "UX, design, development",
     "link": "http://www.chidry.com",
     "action": "See more"
@@ -34,8 +66,8 @@
 
   {
     "title": "Illustration",
-    "image": "illustration.jpg",
-    "tags": "various",
+    "image": "illustration.png",
+    "tags": "illustration",
     "link": "https://dribbble.com/alejandraluaces",
     "action": "See more"
   }
