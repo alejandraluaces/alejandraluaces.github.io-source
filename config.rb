@@ -60,7 +60,17 @@ end
 helpers do
   def navbar_link_to(title, url)
     classes = ["inlineNav__item"]
-    classes << "inlineNav__link--active" if current_page.url == url
+
+    active = false
+    writing_regexp = /^\/writing\//
+
+    if writing_regexp.match(current_page.url) && writing_regexp.match(url)
+      active = true
+    elsif !writing_regexp.match(current_page.url) && !writing_regexp.match(url)
+      active = true
+    end
+
+    classes << "inlineNav__link--active" if active
     link_to title, url, class: classes.join(' ')
   end
 end
