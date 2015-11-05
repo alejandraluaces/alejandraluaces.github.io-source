@@ -12,14 +12,12 @@
 // --------------------------------------------
 
 .article__body {
-
-  max-width: 700px;
-
   @extend %group;
+
 
   & > h3 {
     @extend .scale--4;
-    margin-top: $gutter*2;
+    margin: $gutter*2 0 $gutter 0;
   }
 
   p {
