@@ -13,7 +13,7 @@ page "/calendar.haml", layout: false
 
 page "*", layout: "layout"
 page "writing/source/*", layout: "post_layout"
-page "work/index.html", layout: "portfolio_layout"
+page "work/*", layout: "portfolio_layout"
 
 ########################################################################
 # Blog
