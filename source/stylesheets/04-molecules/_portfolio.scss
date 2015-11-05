@@ -87,18 +87,16 @@
 // ### Case Studies
 // --------------------------------------------
 
-.case__header {
-
-}
-
-.case__title {
-
-}
-
 .case__body {
-  @extend .article__body;
 
   img {
     width: 100%;
+    margin-bottom: $gutter;
   }
+
+  & > h3 {
+    @extend .scale--4;
+    margin: $gutter*2 0 $gutter/2 0;
+  }
+
 }
