@@ -12,8 +12,8 @@
     "title": "International Housewares Association",
     "tags": "UX, design, development, copywriting",
     "image": "iha.png",
-    "link": "/charipick.html",
-    "action": "Read more"
+    "link": "/",
+    "action": "coming soon"
   },
 
   {
@@ -21,14 +21,14 @@
     "tags": "design, copywriting",
     "image": "inspired.png",
     "link": "/charipick.html",
-    "action": "Read more"
+    "action": "coming soon"
   },
 
   {
     "title": "Charipick",
     "tags": "UX, design",
     "image": "charipick.gif",
-    "link": "/charipick.html",
+    "link": "http://charipick.org",
     "action": "Go to site"
   },
 
@@ -61,7 +61,7 @@
     "image": "chidry.png",
     "tags": "UX, design, development",
     "link": "http://www.chidry.com",
-    "action": "Read more"
+    "action": "go to site"
   },
 
   {
@@ -69,6 +69,6 @@
     "image": "illustration.png",
     "tags": "illustration",
     "link": "https://dribbble.com/alejandraluaces",
-    "action": "Read more"
+    "action": "see more"
   }
 ]
