@@ -87,7 +87,13 @@
 // ### Case Studies
 // --------------------------------------------
 
-.case__body {
+.caseStudy__body {
+
+  & hr {
+    border: 0;
+    border-bottom: 1px solid $gray--25;
+    margin: 2em 0;
+  }
 
   img {
     width: 100%;
@@ -99,4 +105,14 @@
     margin: $gutter*2 0 $gutter/2 0;
   }
 
+}
+
+.caseStudy__intro {
+  @extend .scale--7;
+  color: $gray--75;
+}
+
+.caseStudy__header {
+  @extend .article__header;
+  text-align: center;
 }

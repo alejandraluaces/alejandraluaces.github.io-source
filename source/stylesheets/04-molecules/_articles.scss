@@ -14,6 +14,9 @@
 .article__body {
   @extend %group;
 
+  & hr {
+    margin: 2em 0;
+  }
 
   & > h3 {
     @extend .scale--4;

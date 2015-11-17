@@ -48,6 +48,10 @@ html, body {
 
 .l--fullBleed {
   margin: 0 -25%;
+
+  img {
+    width: 100%;
+  }
 }
 
 .centeredBlock {
