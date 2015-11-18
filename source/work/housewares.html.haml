@@ -2,20 +2,39 @@
 title: International Housewares Association
 tags: ux, design, development, copywriting
 ---
-.l--fullBleed
-  %img{:src => "../images/work/iha-header.jpg", class: ""}
+
+.caseStudy__header
+  %img{:src => "../images/work/iha-header.png", class: ""}
 
 %p The International Housewares Association holds the International Home + Housewares Show and is the go-to resource for the housewares industry standards.
 
-%hr
-
 %p As senior product designer at Eight Bit Studios, I led a team of five in refreshing the brand and building a more contemporary web presence.
 
-%h3 Modular design approach
+%hr
+
+%h3 The design Kickoff
+%p I wanted the redesign to be more than just a reskinning of the existing site: I wanted to address the user experience of the site–from the information architecture to the way forms worked. Everything needed some love.
+%p For half a day, I sat with key decision makers at the IHA, facilitating exercises that helped us identify goals for the redesign and overarching digital stragegy for the organization.
+
+%h3 A modular approach
 %p We identified plenty of common elements through an interface inventory, and suggested taking a modular approach to design–scoping these patterns instead of pages.
 
 .hang--left.float--left.l--half
   %img{:src => "../images/work/reusable-patterns-printout.jpg", class: ""}
 %p To make this transition easier for the executive board and IHA's in-house developer to understand, I held a collaborative design kickoff, where we cut modules out of paper and rearranged them on a table.
-
 %p The result led us to determine the information architecture for the site and helped us devise components to estimate and start building out.
+
+%h3 Designing in the browser
+%p Early on, I prepared the team for my master plan: to design most of the site in the browser instead of making comps for each page. This was a pretty new concept to the IHA, who was quite used to a waterfall process.
+.hang--right.float--right.l--half
+  %img{:src => "../images/work/iha-iterating.gif", class: ""}
+%p Collaboration is key. I enjoy working closely with clients (who are often the masters or subject experts of their domain!), but find the design feedback process to be tedious. Why waste time changing mockups when you can edit the real thing?
+%p Knowing we had to appeal to board members, we compromised and settled on making three static mockups that we passed along to the board. The rest of the feedback was addressed in-browser, on the fly.
+
+%h3 The <em>other</em> client
+%p When we create a design, we're designing for two sets of clients: the end user, and the person responsible for maintaining the system. Housewares was running on markup with inline styles, and CSS that was over ten years old! What a maintenance nightmare.
+%p Although a bit risky, I chose to use Flexbox for the layout, and used good ol' SASS to make the CSS easier to navigate and maintain.
+%p It was a blast teaching the IHA's in-house developer how to use these new tools. Even better was seeing his face light up when we deleted the old CSS files.
+
+.l--fullBleed
+  %img{:src => "../images/work/housewares--threeacross.png", class: ""}
