@@ -82,7 +82,7 @@
   font-weight: map-get($fontWeight, bold);
   width: 100%;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     width: 50%;
   }
 }

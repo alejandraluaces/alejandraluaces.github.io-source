@@ -14,9 +14,13 @@ html, body {
   float: none;
   margin: 0;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     margin-right: 5%;
     float: left;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-right: 8%;
   }
 }
 
@@ -24,24 +28,40 @@ html, body {
   float: none;
   margin: 0;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     margin-left: 5%;
     float: right;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-left: 8%;
   }
 }
 
 .hang--left {
   margin-left: 0;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
+    margin-left: -10%;
+  }
+
+  @media screen and (min-width: 1000px) {
     margin-left: -20%;
   }
+}
+
+.margin--bottom {
+  margin-bottom: 1em;
 }
 
 .hang--right {
   margin-right: 0;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
+    margin-right: -10%;
+  }
+
+  @media screen and (min-width: 1000px) {
     margin-right: -20%;
   }
 }
@@ -60,6 +80,10 @@ html, body {
   * {
     margin: 0 auto;
   }
+}
+
+.bottomBreak {
+  border-bottom: 1px solid $gray--25;
 }
 
 .hidden {

@@ -97,7 +97,6 @@
 
   img {
     width: 100%;
-    margin-bottom: $gutter;
   }
 
   & > h3 {
@@ -113,6 +112,7 @@
 }
 
 .caseStudy__header {
-  @extend .article__header;
-  text-align: center;
+  @extend .l--half;
+  @extend .centeredBlock;
+  margin-bottom: 2em;
 }
