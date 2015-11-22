@@ -15,7 +15,7 @@ html, body {
   margin: 0;
 
   @media screen and (min-width: 600px) {
-    margin-right: 5%;
+    margin: 1em 5% 1em 0;
     float: left;
   }
 
@@ -29,7 +29,7 @@ html, body {
   margin: 0;
 
   @media screen and (min-width: 600px) {
-    margin-left: 5%;
+    margin-left: 1em 0 1em 5%;
     float: right;
   }
 
